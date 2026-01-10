@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | Men of God</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/cards.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/episodes.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/blog.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/css/contact.css' | relative_url }}">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="{{ '/assets/page/icons/favicon.svg' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/page/icons/favicon-16.png' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/page/icons/favicon-32.png' | relative_url }}">
+  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
+</head>
+<body>
+  {% include header.html %}
+
+  <!-- Main content -->
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <!-- Scripts -->
+  <script src="{{ '/js/main.js' | relative_url }}"></script>
+</body>
+</html>

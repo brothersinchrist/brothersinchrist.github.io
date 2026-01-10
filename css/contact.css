@@ -1,0 +1,111 @@
+/* ===============================
+   CONTACT PAGE STYLES
+================================= */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.contact-card {
+  background: var(--bg-alt);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.contact-card h2 {
+  margin-top: 0;
+}
+
+/* ===============================
+   CONTACT FORM
+================================= */
+
+.contact-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #020617;
+  color: var(--text);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.contact-form button {
+  margin-top: 1rem;
+}
+
+/* ===============================
+   SOCIAL / INFO
+================================= */
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+.social-links a {
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .social-links a {
+    font-size: 0.95rem;
+  }
+}
+
+.contact-email {
+  margin-top: 1rem;
+}
+
+.contact-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 1rem;
+}
+
+.form-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.8rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.social-links img {
+  width: 18px;
+  height: 18px;
+
+  /* HARD LIMITS — this is the key */
+  min-width: 18px;
+  min-height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+
+  object-fit: contain;
+  display: block;
+
+  filter: invert(85%);
+}

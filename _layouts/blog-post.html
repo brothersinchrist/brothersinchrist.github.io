@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="blog-post content-page">
+  {% if page.cover %}
+    <header class="blog-hero page-hero" style="background-image: url('{{ page.cover | relative_url }}')">
+      <div class="blog-hero-inner page-hero-inner">
+        <h1>{{ page.title }}</h1>
+        <p class="date">{{ page.date | date: "%B %d, %Y" }}</p>
+      </div>
+    </header>
+  {% else %}
+    <h1>{{ page.title }}</h1>
+    <p class="date">{{ page.date | date: "%B %d, %Y" }}</p>
+  {% endif %}
+
+  {{ content }}
+
+  {% include comments-giscus.html %}
+
+  <p><a href="{{ '/blog/' | relative_url }}">← Back to Blog</a></p>
+</article>

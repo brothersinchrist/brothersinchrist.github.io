@@ -1,0 +1,15 @@
+---
+title: "First post!"
+created: 2026-01-07
+author:
+summary: "This is a test"
+cover: /assets/uploads/images/20251220_140530.jpg
+layout: blog-post
+comments: true
+publish: false
+---
+# Blog post
+
+## This is a blog post
+
+There will be many more...*hopefully*

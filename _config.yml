@@ -1,0 +1,37 @@
+# Site settings
+title: "Men of God"
+baseurl: "/menofgod-site"
+url: "https://brothersinchrist.github.io"
+
+# Markdown & Permalinks
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Collections for PagesCMS content
+collections:
+  blog:
+    output: true
+    permalink: /blog/:name/
+  episodes:
+    output: true
+    permalink: /episodes/:name/
+
+# Defaults: assign layouts automatically
+defaults:
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: episodes
+    values:
+      layout: episode
+
+# Exclude CMS assets if needed
+exclude:
+  - node_modules
+  - vendor/bundle

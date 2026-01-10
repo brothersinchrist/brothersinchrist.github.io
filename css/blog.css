@@ -1,0 +1,150 @@
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem auto;
+  /* Limit grid container so at most 3 cards fit across */
+  max-width: calc(3 * 280px + 2 * 2rem);
+  width: 100%;
+  padding: 0 1rem;
+}
+
+/* Card styles moved to css/cards.css to share across episodes, blog posts, and hosts */
+
+.post-title {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.post-summary {
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.blog-post-page {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blog-post-page h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Main article content spacing and typography */
+.blog-post, .blog-post-page {
+  padding: 2.25rem 1.25rem;
+  margin: 1.25rem auto 2rem;
+}
+.blog-post p,
+.blog-post li,
+.blog-post blockquote,
+.blog-post pre {
+  line-height: 1.8;
+  color: var(--text);
+}
+.blog-post h2, .blog-post h3 {
+  margin-top: 1.4rem;
+  margin-bottom: .6rem;
+}
+.blog-post img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+
+.post-date {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.blog-post-page blockquote {
+  margin: 2rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid var(--accent);
+  font-style: italic;
+}
+
+/* Post cover images */
+.post-cover {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 0 1rem 0;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+/* Thumbnails inside blog index cards */
+.blog-posts .post-cover {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 520px) {
+  .blog-posts .post-cover { height: 120px; }
+}
+
+/* Blog post hero (single post) */
+.blog-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 36vh;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-bottom: 1.75rem;
+}/* When blog-hero is used as the shared page-hero, remove outer rounding so it goes edge-to-edge */
+.blog-hero.page-hero { border-radius: 0; }.blog-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.55));
+  z-index: 0;
+}
+.blog-hero-inner {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 2.25rem;
+  max-width: 1200px;
+  width: 100%;
+}
+.blog-hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.6rem, 4vw, 2.25rem);
+}
+.blog-hero .date {
+  color: rgba(255,255,255,0.9);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 1024px) {
+  .blog-hero { min-height: 44vh; }
+}
+@media (max-width: 520px) {
+  .blog-hero { min-height: 24vh; }
+  .blog-hero-inner { padding: 1.25rem; }
+  .blog-hero h1 { font-size: 1.3rem; }
+}
