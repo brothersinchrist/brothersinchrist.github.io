@@ -1,4 +1,3 @@
-<script>
 async function handleContactSubmit(e) {
   e.preventDefault();
 
@@ -32,4 +31,3 @@ async function handleContactSubmit(e) {
 
   return false;
 }
-</script>
