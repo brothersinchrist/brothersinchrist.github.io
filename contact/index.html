@@ -88,6 +88,13 @@
         We will never sell your information.
       </p>
     </form>
+
+    <!-- Debug output panel -->
+    <div id="debug-panel" style="margin-top:1em; padding:1em; background:#f9f9f9; border:1px solid #ccc;">
+      <strong>Debug Output:</strong>
+      <pre id="debug-output" style="white-space:pre-wrap;"></pre>
+    </div>
+
   </div>
 
   <div class="contact-card card">
@@ -133,6 +140,74 @@
   </div>
 
 </section>
+
+<script>
+async function handleContactSubmit(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const data = new FormData(form);
+
+  const payload = {
+    title: "Contact: " + data.get("subject"),
+    body:
+      `Name: ${data.get("name")}\n` +
+      `Email: ${data.get("email")}\n\n` +
+      data.get("message")
+  };
+
+  // Reference debug panel
+  const debugOutput = document.getElementById("debug-output");
+  function logDebug(msg) {
+    console.log(msg);
+    if (debugOutput) {
+      debugOutput.textContent += msg + "\n";
+    }
+  }
+
+  logDebug("Submitting contact form:");
+  logDebug(JSON.stringify(payload, null, 2));
+  logDebug("Using token: " + (window.CONTACT_TOKEN ? "present" : "missing"));
+
+  try {
+    const res = await fetch(
+      "https://api.github.com/repos/brothersinchrist/menofgod-contact/issues",
+      {
+        method: "POST",
+        headers: {
+          "Authorization": "Bearer " + window.CONTACT_TOKEN,
+          "Accept": "application/vnd.github+json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      }
+    );
+
+    logDebug(`Response status: ${res.status} ${res.statusText}`);
+    const json = await res.json();
+    logDebug("Response body: " + JSON.stringify(json, null, 2));
+
+    if (res.ok) {
+      alert("Message sent successfully.");
+      form.reset();
+      logDebug("Form submitted successfully.");
+    } else {
+      alert(
+        `There was a problem sending your message.\nStatus: ${res.status} ${res.statusText}\n` +
+        `Message: ${json.message || "Unknown error"}`
+      );
+      logDebug("Form submission failed.");
+    }
+  } catch (err) {
+    console.error("Fetch error:", err);
+    logDebug("Fetch error: " + err);
+    alert("An unexpected error occurred. Check console or debug panel for details.");
+  }
+
+  return false;
+}
+</script>
+
 
   </main>
 
