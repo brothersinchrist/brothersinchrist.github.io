@@ -46,9 +46,7 @@
   <main>
     <section class="hero">
   <h1>Contact Us</h1>
-  <p class="hero-statement">
-    Honest conversations start with reaching out.
-  </p>
+  <p class="hero-statement">Honest conversations start with reaching out.</p>
   <p class="tagline">
     Whether you have a question, a topic idea, or want to be a guest,
     we'd like to hear from you.
@@ -56,18 +54,11 @@
 </section>
 
 <section class="section contact-grid">
-
   <div class="contact-card card">
     <h2>Send Us a Message</h2>
     <form class="contact-form" method="POST" action="#" onsubmit="return handleContactSubmit(event);">
-      <label>Name
-        <input type="text" name="name" required="" />
-      </label>
-
-      <label>Email
-        <input type="email" name="email" required="" />
-      </label>
-
+      <label>Name<input type="text" name="name" required="" /></label>
+      <label>Email<input type="email" name="email" required="" /></label>
       <label>Subject
         <select name="subject">
           <option>General Question</option>
@@ -76,98 +67,50 @@
           <option>Media / Business</option>
         </select>
       </label>
-
-      <label>Message
-        <textarea name="message" rows="5" required=""></textarea>
-      </label>
-
+      <label>Message<textarea name="message" rows="5" required=""></textarea></label>
       <button type="submit" class="btn primary">Send Message</button>
-
       <p class="form-note">
-        This form currently sends messages via email processing.
-        We will never sell your information.
+        This form currently sends messages via email processing. We will never sell your information.
       </p>
     </form>
 
-    <!-- Debug output panel -->
+    <!-- Debug panel -->
     <div id="debug-panel" style="margin-top:1em; padding:1em; background:#f9f9f9; border:1px solid #ccc;">
       <strong>Debug Output:</strong>
       <pre id="debug-output" style="white-space:pre-wrap;"></pre>
     </div>
-
   </div>
-
-  <div class="contact-card card">
-    <h2>Connect With Us</h2>
-    <p>
-      Men of God is about building leaders, strengthening families,
-      and having honest conversations rooted in faith, responsibility,
-      and love of country.
-    </p>
-
-    <div class="social-links">
-      <a href="#" aria-label="YouTube">
-        <img src="/menofgod-site/assets/page/icons/youtube.svg" alt="" />
-        YouTube
-      </a>
-      <a href="#" aria-label="X">
-        <img src="/menofgod-site/assets/page/icons/x.svg" alt="" />
-        X (Twitter)
-      </a>
-      <a href="#" aria-label="Facebook">
-        <img src="/menofgod-site/assets/page/icons/facebook.svg" alt="" />
-        Facebook
-      </a>
-      <a href="#" aria-label="Instagram">
-        <img src="/menofgod-site/assets/page/icons/instagram.svg" alt="" />
-        Instagram
-      </a>
-      <a href="#" aria-label="Rumble">
-        <img src="/menofgod-site/assets/page/icons/rumble.svg" alt="" />
-        Rumble
-      </a>
-    </div>
-
-    <div class="contact-email">
-      <strong>Email:</strong><br />
-      contact@menofgodpodcast.com
-    </div>
-
-    <p class="contact-note">
-      We read every message. While we may not respond to all of them,
-      your voice matters.
-    </p>
-  </div>
-
 </section>
 
+<!-- Inject token script first -->
+<script src="/menofgod-site/js/contact-token.js"></script>
+
+<!-- Form logic -->
 <script>
 async function handleContactSubmit(e) {
   e.preventDefault();
 
   const form = e.target;
   const data = new FormData(form);
-
   const payload = {
     title: "Contact: " + data.get("subject"),
-    body:
-      `Name: ${data.get("name")}\n` +
-      `Email: ${data.get("email")}\n\n` +
-      data.get("message")
+    body: `Name: ${data.get("name")}\nEmail: ${data.get("email")}\n\n${data.get("message")}`
   };
 
-  // Reference debug panel
   const debugOutput = document.getElementById("debug-output");
-  function logDebug(msg) {
+  function log(msg) {
     console.log(msg);
-    if (debugOutput) {
-      debugOutput.textContent += msg + "\n";
-    }
+    if (debugOutput) debugOutput.textContent += msg + "\n";
   }
 
-  logDebug("Submitting contact form:");
-  logDebug(JSON.stringify(payload, null, 2));
-  logDebug("Using token: " + (window.CONTACT_TOKEN ? "present" : "missing"));
+  log("Submitting contact form:");
+  log(JSON.stringify(payload, null, 2));
+  log("Using token: " + (window.CONTACT_TOKEN ? "present" : "missing"));
+
+  if (!window.CONTACT_TOKEN) {
+    alert("Contact token is missing. Check build workflow.");
+    return false;
+  }
 
   try {
     const res = await fetch(
@@ -183,25 +126,22 @@ async function handleContactSubmit(e) {
       }
     );
 
-    logDebug(`Response status: ${res.status} ${res.statusText}`);
+    log(`Response status: ${res.status} ${res.statusText}`);
     const json = await res.json();
-    logDebug("Response body: " + JSON.stringify(json, null, 2));
+    log("Response body: " + JSON.stringify(json, null, 2));
 
     if (res.ok) {
       alert("Message sent successfully.");
       form.reset();
-      logDebug("Form submitted successfully.");
+      log("Form submitted successfully.");
     } else {
-      alert(
-        `There was a problem sending your message.\nStatus: ${res.status} ${res.statusText}\n` +
-        `Message: ${json.message || "Unknown error"}`
-      );
-      logDebug("Form submission failed.");
+      alert(`Problem sending message: ${json.message || "Unknown error"}`);
+      log("Form submission failed.");
     }
   } catch (err) {
-    console.error("Fetch error:", err);
-    logDebug("Fetch error: " + err);
-    alert("An unexpected error occurred. Check console or debug panel for details.");
+    console.error(err);
+    log("Fetch error: " + err);
+    alert("Unexpected error occurred. Check console/debug panel.");
   }
 
   return false;
