@@ -54,9 +54,11 @@
 <section class="section contact-grid">
   <div class="contact-card card">
     <h2>Send Us a Message</h2>
+
     <form class="contact-form" method="POST" action="#" onsubmit="return handleContactSubmit(event);">
       <label>Name<input type="text" name="name" required="" /></label>
       <label>Email<input type="email" name="email" required="" /></label>
+
       <label>Subject
         <select name="subject">
           <option>General Question</option>
@@ -65,10 +67,20 @@
           <option>Media / Business</option>
         </select>
       </label>
+
       <label>Message<textarea name="message" rows="5" required=""></textarea></label>
+
+      <!-- Honeypot field (hidden from humans) -->
+      <label style="display:none;">
+        Website
+        <input type="text" name="website" autocomplete="off" />
+      </label>
+
       <button type="submit" class="btn primary">Send Message</button>
+
       <p class="form-note">
-        This form currently sends messages via email processing. We will never sell your information.
+        Your message is securely processed through our serverless system.
+        We will never sell your information.
       </p>
     </form>
 
@@ -129,9 +141,13 @@ async function handleContactSubmit(e) {
 
   const form = e.target;
   const data = new FormData(form);
+
   const payload = {
-    title: "Contact: " + data.get("subject"),
-    body: `Name: ${data.get("name")}\nEmail: ${data.get("email")}\n\n${data.get("message")}`
+    name: data.get("name"),
+    email: data.get("email"),
+    subject: data.get("subject"),
+    message: data.get("message"),
+    website: data.get("website") // honeypot
   };
 
   const debugOutput = document.getElementById("debug-output");
@@ -142,37 +158,27 @@ async function handleContactSubmit(e) {
 
   log("Submitting contact form:");
   log(JSON.stringify(payload, null, 2));
-  log("Using token: " + (window.CONTACT_TOKEN ? "present" : "missing"));
-
-  if (!window.CONTACT_TOKEN) {
-    alert("Contact token is missing. Check build workflow.");
-    return false;
-  }
 
   try {
     const res = await fetch(
-      "https://api.github.com/repos/brothersinchrist/menofgod-contact/issues",
+      "https://menofgod-contact-worker.menofgod-worker.workers.dev",
       {
         method: "POST",
-        headers: {
-          "Authorization": "Bearer " + window.CONTACT_TOKEN,
-          "Accept": "application/vnd.github+json",
-          "Content-Type": "application/json"
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
       }
     );
 
-    log(`Response status: ${res.status} ${res.statusText}`);
-    const json = await res.json();
-    log("Response body: " + JSON.stringify(json, null, 2));
+    const text = await res.text();
+    log(`Response status: ${res.status}`);
+    log("Response body: " + text);
 
     if (res.ok) {
       alert("Message sent successfully.");
       form.reset();
       log("Form submitted successfully.");
     } else {
-      alert(`Problem sending message: ${json.message || "Unknown error"}`);
+      alert("There was a problem sending your message.");
       log("Form submission failed.");
     }
   } catch (err) {
