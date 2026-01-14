@@ -150,3 +150,10 @@
   .blog-hero-inner { padding: 1.25rem; }
   .blog-hero h1 { font-size: 1.3rem; }
 }
+
+@media (max-width: 520px) {
+  .blog-posts {
+    grid-template-columns: 1fr; /* one column for tiny screens */
+    padding: 0 0.75rem; /* match your other gutters */
+  }
+}
