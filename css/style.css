@@ -113,12 +113,24 @@ a:hover {
   font-size: 1.5rem;
 }
 
+/* Always start nav closed on page show */
 .nav-menu {
   display: flex;
   gap: 1.4rem;
   align-items: center;
   font-weight: 600;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
 }
+
+/* When JS toggles it open */
+.nav-menu.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .nav-menu a {
   padding: 0.5rem 0.25rem;
   border-radius: 6px;
@@ -153,20 +165,6 @@ a:hover {
   height: 3px;
   background-color: var(--text);
   border-radius: 2px;
-}
-
-/* Always start nav closed on page show */
-.nav-menu {
-  transform: translateX(100%);
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* When JS toggles it open */
-.nav-menu.open {
-  transform: translateX(0);
-  opacity: 1;
-  pointer-events: auto;
 }
 
 /* ===============================
