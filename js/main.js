@@ -25,7 +25,17 @@ function initHamburger() {
   const nav = document.getElementById("nav-links");
   if (!toggle || !nav) return;
 
-  toggle.addEventListener("click", () => nav.classList.toggle("open"));
+  // Toggle open/close when hamburger is tapped
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+
+  // Close menu when any link is clicked
+  nav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+    });
+  });
 }
 
 // ----------------------------
