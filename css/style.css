@@ -322,7 +322,7 @@ footer {
   margin: 0 auto; /* top and bottom equal to side gutter, centered horizontally */
   border-radius: 0; /* no outer rounding for full-width visual */
   box-sizing: border-box;
-  padding: 0 var(--hero-gutter);
+  padding: 0;
 }
 
 /* Inner container constrains content and provides matching horizontal + top gutter */
