@@ -312,23 +312,6 @@ footer {
 /* ===============================
    RESPONSIVE
 ================================= */
-@media (max-width: 768px) {
-  .nav-menu {
-    position: fixed;
-    top: var(--header-height);
-    right: 0;
-    width: 75%;
-    max-width: 320px;
-    height: calc(100vh - var(--header-height));
-    background: rgba(2,6,23,0.98);
-    flex-direction: column;
-    padding: 1.5rem;
-    gap: 1rem;
-    transition: transform 0.25s ease, opacity 0.2s ease;
-    z-index: 9998;
-  }
-}
-
 @media (min-width:1024px) {
   .logo{font-size:1.85rem}
   .nav-menu{gap:2rem}
