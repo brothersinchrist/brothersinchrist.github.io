@@ -3,7 +3,8 @@
 /* Base card look for content cards (blog posts, episodes, contact) */
 .episode-card,
 .blog-post-card,
-.contact-card {
+.contact-card,
+.store-card {
   background: var(--bg-alt);
   padding: 1.5rem;
   border-radius: 1rem;
@@ -15,7 +16,8 @@
 
 .episode-card:hover,
 .blog-post-card:hover,
-.contact-card:hover {
+.contact-card:hover,
+.store-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   z-index: 1;
@@ -41,3 +43,4 @@
   padding: 1.5rem;
   border-radius: 1rem;
 }
+
