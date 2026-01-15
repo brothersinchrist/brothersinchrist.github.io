@@ -21,22 +21,33 @@ document.addEventListener("DOMContentLoaded", () => {
 // Hamburger
 // ----------------------------
 function initHamburger() {
-  const toggle = document.getElementById("menu-toggle");
-  const nav = document.getElementById("nav-links");
+  const toggle = document.querySelector(".nav-toggle");
+  const nav = document.getElementById("navMenu");
   if (!toggle || !nav) return;
 
-  // Toggle open/close when hamburger is tapped
+  // Toggle menu when hamburger clicked
   toggle.addEventListener("click", () => {
     nav.classList.toggle("open");
+    toggle.classList.toggle("active"); // optional if you want to animate bars
   });
 
-  // Close menu when any link is clicked
-  nav.querySelectorAll("a").forEach(link => {
+  // Close menu when any nav link clicked
+  const links = nav.querySelectorAll("a");
+  links.forEach((link) => {
     link.addEventListener("click", () => {
       nav.classList.remove("open");
+      toggle.classList.remove("active");
     });
   });
 }
+
+// Close menu if user navigates back/forward
+window.addEventListener("pageshow", () => {
+  const nav = document.getElementById("navMenu");
+  const toggle = document.querySelector(".nav-toggle");
+  if (nav) nav.classList.remove("open");
+  if (toggle) toggle.classList.remove("active");
+});
 
 // ----------------------------
 // Hero Rotating Text
@@ -92,16 +103,3 @@ function adjustHeaderOffset() {
   document.body.style.paddingTop = h + 'px';
   handleScroll();
 }
-
-// ----------------------------
-// Close the menu if resizing or a link selected
-// ----------------------------
-window.addEventListener("pageshow", () => {
-  const nav = document.getElementById("nav-links");
-  if (nav) nav.classList.remove("open");
-});
-
-window.addEventListener("resize", () => {
-  const nav = document.getElementById("nav-links");
-  if (nav) nav.classList.remove("open");
-});
