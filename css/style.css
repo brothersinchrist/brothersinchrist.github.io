@@ -365,12 +365,20 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  .page-hero { --hero-gutter: 1.75rem; min-height: 44vh; width: calc(100vw - (var(--hero-gutter) * 2)); }
+  .page-hero { 
+    --hero-gutter: 1.75rem; 
+    min-height: 44vh; 
+    /* width: calc(100vw - (var(--hero-gutter) * 2));  */
+  }
   .page-hero-inner { padding-left: var(--hero-gutter); padding-right: var(--hero-gutter); }
 }
 
 @media (max-width: 520px) {
-  .page-hero { --hero-gutter: 0.75rem; min-height: 24vh; margin: var(--hero-gutter) auto; width: calc(100vw - (var(--hero-gutter) * 2)); }
+  .page-hero { 
+    --hero-gutter: 0.75rem; 
+    min-height: 24vh; 
+    /* width: calc(100vw - (var(--hero-gutter) * 2));  */
+  }
   .page-hero-inner { padding-left: 0.75rem; padding-right: 0.75rem; padding-top: 0.75rem; }
 } 
 .page-hero::before {

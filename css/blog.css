@@ -47,8 +47,8 @@
 
 /* Main article content spacing and typography */
 .blog-post, .blog-post-page {
-  padding: 2.25rem 1.25rem;
-  margin: 1.25rem auto 2rem;
+  padding: 0 1.25rem 2.25rem 1.25rem;
+  margin: 0 auto 2rem auto;
 }
 .blog-post p,
 .blog-post li,
@@ -65,7 +65,6 @@
   max-width: 100%;
   border-radius: 0.5rem;
 }
-
 
 .post-date {
   color: var(--muted);
@@ -115,7 +114,22 @@
   color: #fff;
   border-radius: 0.75rem;
   overflow: hidden;
-  margin-bottom: 1.75rem;
+}
+
+.blog-hero-container {
+  width: 100vw;
+  max-width: none;
+  margin-left: 50%;
+  margin-right: 0px;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+.blog-hero.page-hero {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  max-width: none;
 }
 
 /* When blog-hero is used as the shared page-hero, remove outer rounding so it goes edge-to-edge */
