@@ -6,7 +6,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Blog",
-        "excerpt":"Men of God Blog Honest conversations to inspire men to lead their families and communities. Faithful Stewards of Gods Grace The Lord Jesus is full of Grace and truth, and by his blood we have been made new so let us buy faith in Christ walk in the newness that...","categories": [],
+        "excerpt":"             No blog posts have been published yet.           ","categories": [],
         "tags": [],
         "url": "/menofgod-site/blog/",
         "teaser": null
