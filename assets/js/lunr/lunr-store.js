@@ -24,7 +24,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Home",
-        "excerpt":"Men of God Equipping men to lead with courage, conviction, and Christ at the center. Latest Episodes About the Hosts Men of God Equipping men to lead with courage, conviction, and Christ at the center. Welcome to Men of God, a ministry built on brotherhood, family, and faith. We’re here...","categories": [],
+        "excerpt":"Home Men of God Equipping men to lead with courage, conviction, and Christ at the center. Welcome to Men of God, a ministry built on brotherhood, family, and faith. We’re here to encourage men to stand firm, build strong homes, and walk boldly in the calling God has placed on...","categories": [],
         "tags": [],
         "url": "/menofgod-site/",
         "teaser": null
