@@ -5,7 +5,7 @@ var store = [{
         "url": "/menofgod-site/about/",
         "teaser": null
       },{
-        "title": "Blog",
+        "title": "Men of God Blog",
         "excerpt":"Blog Faithful Stewards of Gods Grace January 13, 2026 • DeShun Bland The Lord Jesus is full of Grace and truth, and by his blood we have been made new so let us buy faith in Christ walk in the newness that he has given us in obedience Trust and...","categories": [],
         "tags": [],
         "url": "/menofgod-site/blog/",
