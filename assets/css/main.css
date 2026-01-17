@@ -5642,6 +5642,97 @@ blockquote {
 }
 
 /* -----------------------------------------
+   PRODUCT GRID + CARDS
+   ----------------------------------------- */
+.mog-products-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 2rem;
+}
+
+.mog-card-product {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.mog-card-product img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #222;
+}
+
+.mog-card-body {
+  padding: 1.25rem;
+}
+
+.mog-card-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.mog-card-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #4a3f35;
+}
+
+.mog-product-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 2rem 0;
+}
+
+.mog-product-gallery-image {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+.mog-product {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.mog-product-cover {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #333;
+  margin-bottom: 2rem;
+}
+
+.mog-product-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.mog-product-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a3f35;
+  margin-bottom: 1rem;
+}
+
+.mog-product-body {
+  margin: 2rem 0;
+  line-height: 1.7;
+}
+
+.mog-product-checkout {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* -----------------------------------------
    PULL QUOTES
    ----------------------------------------- */
 .mog-pullquote-wrapper {
