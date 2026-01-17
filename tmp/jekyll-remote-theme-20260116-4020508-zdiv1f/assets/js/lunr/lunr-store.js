@@ -36,7 +36,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Men of God",
-        "excerpt":"Men of God Forging men of courage, conviction, and Christlike strength. Listen to the Latest Episode Read the Latest Articles Be watchful, stand firm in the faith, act like men, be strong. 1 Corinthians 16:13 We are called to lead with strength and humility. Men of God Ministry Forging men...","categories": [],
+        "excerpt":"Men of God Forging men of courage, conviction, and strength in Christ. Listen to the Latest Episode Read the Latest Articles Be watchful, stand firm in the faith, act like men, be strong. 1 Corinthians 16:13 We are called to lead with strength and humility. Men of God Ministry Forging...","categories": [],
         "tags": [],
         "url": "/menofgod-site/",
         "teaser": null
