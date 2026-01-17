@@ -1,4 +1,20 @@
 @charset "UTF-8";
+/* -----------------------------------------
+   GLOBAL RESET + SAFETY NET
+   ----------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* -----------------------------------------
+   IMPORT BASE THEME
+   ----------------------------------------- */
 /* Copyright comment */
 /*!
  * Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
@@ -5207,10 +5223,11 @@ body {
   }
 }
 /* -----------------------------------------
-   MEN OF GOD — RUGGED OVERRIDES
+   MEN OF GOD — RUGGED PALETTE
    ----------------------------------------- */
-/* Rugged color palette */
-/* Typography */
+/* -----------------------------------------
+   TYPOGRAPHY + BASE
+   ----------------------------------------- */
 body {
   background: #f7f5f2;
   color: #2d2d2d;
@@ -5218,14 +5235,12 @@ body {
   letter-spacing: 0.3px;
 }
 
-/* Headings */
 h1, h2, h3 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: #2d2d2d;
 }
 
-/* Links */
 a {
   color: #4a3f35;
   font-weight: 600;
@@ -5235,6 +5250,9 @@ a:hover {
   color: rgb(44.2834645669, 37.7007874016, 31.7165354331);
 }
 
+/* -----------------------------------------
+   HERO
+   ----------------------------------------- */
 .mog-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/assets/page/images/hero-bg.jpg") center/cover no-repeat;
   min-height: 60vh;
@@ -5245,7 +5263,9 @@ a:hover {
   padding: 4rem 1.5rem;
 }
 
-/* Scripture styling */
+/* -----------------------------------------
+   SCRIPTURE BLOCKQUOTE
+   ----------------------------------------- */
 blockquote {
   border-left: 4px solid #4a3f35;
   background: rgb(250.8857142857, 249.8571428571, 248.3142857143);
@@ -5254,13 +5274,17 @@ blockquote {
   opacity: 0.9;
 }
 
-/* Product images */
+/* -----------------------------------------
+   PRODUCT IMAGES
+   ----------------------------------------- */
 .product-image {
   border: 2px solid #3a3a3a;
   border-radius: 6px;
 }
 
-/* Buttons */
+/* -----------------------------------------
+   BUTTONS
+   ----------------------------------------- */
 .buy-button,
 .page__content a.button {
   background: #4a3f35;
@@ -5277,16 +5301,9 @@ blockquote {
   background: rgb(44.2834645669, 37.7007874016, 31.7165354331);
 }
 
-/* Dividers */
-hr {
-  border: none;
-  height: 2px;
-  background: #3a3a3a;
-  opacity: 0.4;
-  margin: 2rem 0;
-}
-
-/* Dark mode */
+/* -----------------------------------------
+   DARK MODE
+   ----------------------------------------- */
 @media (prefers-color-scheme: dark) {
   body {
     background: #1c1c1c;
@@ -5303,18 +5320,23 @@ hr {
     background: #555;
   }
 }
+/* -----------------------------------------
+   LAYOUT CONTAINERS
+   ----------------------------------------- */
 .mog-main {
-  padding: 2rem 0;
+  padding-top: 90px;
+  padding-bottom: 2rem;
 }
 
 .mog-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  box-sizing: border-box;
 }
 
 /* -----------------------------------------
-   RUGGED NAV BAR (FULL-WIDTH)
+   NAV BAR — FULL WIDTH + RUGGED
    ----------------------------------------- */
 .mog-header {
   position: fixed;
@@ -5366,7 +5388,7 @@ hr {
 }
 
 /* -----------------------------------------
-   MOBILE NAV (HAMBURGER)
+   MOBILE NAV
    ----------------------------------------- */
 .mog-nav-toggle {
   display: none;
@@ -5383,7 +5405,7 @@ hr {
   transition: 0.3s ease;
 }
 
-/* Hamburger → X animation */
+/* Hamburger → X */
 .mog-nav-toggle.active span:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
@@ -5396,7 +5418,6 @@ hr {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-/* Mobile Menu */
 @media (max-width: 768px) {
   .mog-nav {
     display: none;
@@ -5432,72 +5453,6 @@ hr {
     transform: translateY(0);
   }
 }
-/* -----------------------------------------
-   MAIN CONTENT OFFSET (because header is fixed)
-   ----------------------------------------- */
-.mog-main {
-  padding-top: 90px;
-}
-
-/* -----------------------------------------
-   MISSION + SCRIPTURE SECTION
-   ----------------------------------------- */
-.mog-mission-section {
-  margin: 4rem auto;
-  max-width: 900px;
-  padding: 0 1.5rem;
-}
-
-.mog-mission-tagline {
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #fff;
-  letter-spacing: 0.5px;
-}
-
-.mog-mission-body {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 2.5rem;
-  opacity: 0.95;
-}
-
-.mog-mission-scripture {
-  background: #111;
-  border-left: 4px solid #4a3f35;
-  padding: 1.5rem 2rem;
-  margin: 2rem 0;
-  border-radius: 6px;
-  font-style: italic;
-  position: relative;
-}
-
-.mog-mission-scripture p {
-  margin: 0;
-  color: #fff;
-  line-height: 1.6;
-}
-
-.mog-mission-reference {
-  margin-top: 0.75rem;
-  font-size: 0.95rem;
-  opacity: 0.85;
-  text-align: right;
-}
-
-/* Optional grit overlay */
-.mog-mission-scripture::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("/assets/page/textures/grit.png");
-  opacity: 0.08;
-  pointer-events: none;
-  border-radius: 6px;
-}
-
 /* -----------------------------------------
    BLOG INDEX
    ----------------------------------------- */
@@ -5554,9 +5509,6 @@ hr {
   opacity: 0.9;
 }
 
-/* -----------------------------------------
-   RESPONSIVE
-   ----------------------------------------- */
 @media (max-width: 768px) {
   .mog-blog-card {
     flex-direction: column;
@@ -5610,14 +5562,6 @@ hr {
   font-size: 1.1rem;
 }
 
-.mog-post-body h2,
-.mog-post-body h3,
-.mog-post-body h4 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
 .mog-post-body img {
   max-width: 100%;
   border-radius: 4px;
@@ -5626,34 +5570,79 @@ hr {
 }
 
 /* -----------------------------------------
-   RESPONSIVE
+   EPISODE MEDIA — RESPONSIVE + RUGGED
    ----------------------------------------- */
-@media (max-width: 768px) {
-  .mog-post-title {
-    font-size: 1.9rem;
-  }
+.mog-post-media {
+  margin: 2rem 0;
 }
-/* Responsive iframe wrapper */
+
+/* Responsive video */
 .mog-video-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   border-radius: 6px;
+  background: #000;
 }
 
 .mog-video-wrapper iframe {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   border: 0;
 }
 
+/* Audio */
+.mog-post-audio {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mog-post-audio-cover {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #333;
+  margin-bottom: 1rem;
+}
+
+/* Fallback cover */
+.mog-post-cover img {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+/* Media badges */
+.mog-media-badge {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.mog-media-badge.video {
+  background: #8b0000;
+  border-color: #a30000;
+}
+
+.mog-media-badge.audio {
+  background: #003366;
+  border-color: #004080;
+}
+
 /* -----------------------------------------
-   RUGGED PULL-QUOTE SYSTEM
+   PULL QUOTES
    ----------------------------------------- */
 .mog-pullquote-wrapper {
   margin: 3rem auto;
@@ -5664,45 +5653,20 @@ hr {
   border-left: 4px solid #4a3f35;
   border-right: 4px solid #4a3f35;
   padding: 1.75rem 2rem;
-  position: relative;
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
   border-radius: 6px;
-}
-
-.mog-pullquote-left {
-  text-align: left;
-}
-
-.mog-pullquote-right {
-  text-align: right;
-}
-
-.mog-pullquote-mark {
-  font-size: 3rem;
-  font-weight: 900;
-  color: #4a3f35;
-  line-height: 1;
+  position: relative;
 }
 
 .mog-pullquote-text {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 0.5rem 0;
   color: #fff;
-  line-height: 1.4;
   letter-spacing: 0.5px;
 }
 
-.mog-pullquote-ref {
-  margin-top: 0.75rem;
-  font-size: 1rem;
-  opacity: 0.8;
-  font-style: italic;
-}
-
-/* Subtle grit texture overlay (optional) */
 .mog-pullquote::before {
   content: "";
   position: absolute;
@@ -5714,31 +5678,6 @@ hr {
 }
 
 /* -----------------------------------------
-   BREAKOUT (full-width)
-   ----------------------------------------- */
-.mog-pullquote-breakout .mog-pullquote {
-  max-width: none;
-  width: 100%;
-  border-radius: 0;
-  border-left-width: 6px;
-  border-right-width: 6px;
-}
-
-/* -----------------------------------------
-   RESPONSIVE
-   ----------------------------------------- */
-@media (max-width: 600px) {
-  .mog-pullquote {
-    padding: 1.25rem 1.5rem;
-  }
-  .mog-pullquote-text {
-    font-size: 1.25rem;
-  }
-  .mog-pullquote-mark {
-    font-size: 2.5rem;
-  }
-}
-/* -----------------------------------------
    SHARE BAR
    ----------------------------------------- */
 .mog-share-bar {
@@ -5749,11 +5688,6 @@ hr {
   align-items: center;
   gap: 0.75rem;
   flex-wrap: wrap;
-}
-
-.mog-share-label {
-  font-weight: 700;
-  opacity: 0.85;
 }
 
 .mog-share-btn {
@@ -5772,18 +5706,10 @@ hr {
 .mog-share-btn:hover {
   background: #4a3f35;
   border-color: #4a3f35;
-  color: #fff;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .mog-share-bar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 /* -----------------------------------------
-   MEN OF GOD — RUGGED FOOTER
+   FOOTER
    ----------------------------------------- */
 .mog-footer {
   background: #2d2d2d;
@@ -5810,11 +5736,6 @@ hr {
   margin-bottom: 0.5rem;
 }
 
-.mog-footer-tagline {
-  font-size: 0.95rem;
-  opacity: 0.9;
-}
-
 .mog-footer-nav a {
   display: block;
   color: #f0f0f0;
@@ -5829,30 +5750,6 @@ hr {
   color: rgb(133.4330708661, 113.5984251969, 95.5669291339);
 }
 
-.mog-footer-scripture {
-  font-size: 0.9rem;
-  font-style: italic;
-  opacity: 0.9;
-}
-
-.mog-footer-scripture span {
-  display: block;
-  margin-top: 0.25rem;
-  font-style: normal;
-  font-weight: 600;
-}
-
-.mog-footer-bottom {
-  max-width: 1100px;
-  margin: 1.5rem auto 0;
-  padding: 0 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 0.75rem;
-  font-size: 0.85rem;
-  opacity: 0.8;
-}
-
-/* Responsive */
 @media (max-width: 800px) {
   .mog-footer-inner {
     grid-template-columns: 1fr;
