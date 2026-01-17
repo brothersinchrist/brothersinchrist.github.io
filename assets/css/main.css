@@ -5321,9 +5321,15 @@ hr {
   top: 0;
   left: 0;
   width: 100%;
-  background: #000;
-  border-bottom: 4px solid #4a3f35;
+  background: transparent;
+  border-bottom: 4px solid transparent;
   z-index: 9999;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.mog-header.scrolled {
+  background: #000;
+  border-bottom-color: #4a3f35;
 }
 
 .mog-header-inner {
@@ -5342,6 +5348,7 @@ hr {
   letter-spacing: 1px;
 }
 
+/* Desktop Nav */
 .mog-nav {
   display: flex;
   gap: 1.5rem;
@@ -5364,8 +5371,9 @@ hr {
 .mog-nav-toggle {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
   cursor: pointer;
+  z-index: 10000;
 }
 
 .mog-nav-toggle span {
@@ -5375,7 +5383,20 @@ hr {
   transition: 0.3s ease;
 }
 
-/* Hide nav on mobile */
+/* Hamburger → X animation */
+.mog-nav-toggle.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.mog-nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mog-nav-toggle.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Mobile Menu */
 @media (max-width: 768px) {
   .mog-nav {
     display: none;
@@ -5388,23 +5409,34 @@ hr {
     border-top: 1px solid #222;
     border-bottom: 1px solid #222;
     padding: 1rem 0;
+    animation: mogSlideDown 0.3s ease forwards;
+  }
+  .mog-nav.show {
+    display: flex;
   }
   .mog-nav a {
     padding: 0.75rem 1.5rem;
     width: 100%;
   }
-  .mog-nav.show {
-    display: flex;
-  }
   .mog-nav-toggle {
     display: flex;
+  }
+}
+@keyframes mogSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /* -----------------------------------------
    MAIN CONTENT OFFSET (because header is fixed)
    ----------------------------------------- */
 .mog-main {
-  padding-top: 90px; /* prevents hero from hiding under header */
+  padding-top: 90px;
 }
 
 /* -----------------------------------------
