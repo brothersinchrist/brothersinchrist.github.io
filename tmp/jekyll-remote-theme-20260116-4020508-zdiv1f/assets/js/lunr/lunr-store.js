@@ -2536,4 +2536,10 @@ var store = [{
         "tags": [],
         "url": "/menofgod-site/2026/01/14/this-is-another-test-post.html",
         "teaser": null
+      },{
+        "title": "Men of God T-Shirt",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/store/ct-shirt-01/",
+        "teaser": null
       }]
