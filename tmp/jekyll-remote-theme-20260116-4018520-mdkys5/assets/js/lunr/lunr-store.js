@@ -11,6 +11,12 @@ var store = [{
         "url": "/menofgod-site/blog/",
         "teaser": null
       },{
+        "title": "Message Not Sent",
+        "excerpt":"   Message Not Sent    Your message was not submitted. You can try again below.          Back to Contact Page     ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/contact/cancel/",
+        "teaser": null
+      },{
         "title": "Message Sent",
         "excerpt":"   Message Sent    Thank you for reaching out. We’ve received your message and will follow up soon.          Return Home     ","categories": [],
         "tags": [],
