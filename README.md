@@ -181,8 +181,9 @@ Or add buttons:
 <a href="/episodes/" class="mog-btn mog-btn-primary">Listen Now</a>
 ```
 Or add scripture blocks:
-
+```html
 <div class="mog-hero-overlay">
   <p>"Be strong and courageous."</p>
   <span>Joshua 1:9</span>
 </div>
+```
