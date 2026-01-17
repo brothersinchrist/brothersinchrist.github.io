@@ -12,7 +12,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Contact | Men of God",
-        "excerpt":"Contact us Honest conversations start with reaching out. Whether you have a question, a topic idea, or want to be a guest, we'd like to hear from you. Send Us a Message Name Email Subject General Question Topic Suggestion Guest Inquiry Media / Business Message Website Send Message Your message...","categories": [],
+        "excerpt":"Contact Us Honest conversations start with reaching out. Whether you have a question, a topic idea, or want to be a guest, we'd like to hear from you. Send Us a Message Name Email Subject General Question Topic Suggestion Guest Inquiry Media / Business Message Website Send Message Your message...","categories": [],
         "tags": [],
         "url": "/menofgod-site/contact/",
         "teaser": null
