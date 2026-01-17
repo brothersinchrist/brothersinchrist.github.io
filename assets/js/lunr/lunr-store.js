@@ -1,5 +1,5 @@
 var store = [{
-        "title": "Our Mission",
+        "title": "About Us",
         "excerpt":"Our Mission Men of God exists to equip men to lead with courage, conviction, and Christ at the center. We believe men are called to stand firm, build strong families, and serve their communities with humility and strength. Our ministry is built on a simple truth: God uses ordinary men...","categories": [],
         "tags": [],
         "url": "/menofgod-site/about/",
