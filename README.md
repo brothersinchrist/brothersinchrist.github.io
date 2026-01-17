@@ -275,7 +275,7 @@ nav_order: 2
 # Hero system
 hero_enabled: true
 hero_title: "Our Mission"
-hero_subtitle: "Forging men of courage, conviction, and Christlike strength."
+hero_subtitle: "Forging men of courage, conviction, and strength in Christ."
 hero_image: /assets/page/images/mission-hero.jpg
 
 hero_overlay_text: "We are called to build men who build families who build communities."
