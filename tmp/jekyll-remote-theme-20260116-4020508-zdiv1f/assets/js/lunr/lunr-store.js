@@ -24,7 +24,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Contact | Men of God",
-        "excerpt":"Contact Us Honest conversations start with reaching out. Send a Message Name Email Subject General Question Topic Suggestion Guest Inquiry Media / Business Message Website Send Message Your message is securely processed through our serverless system. Connect With Us We’re building strong men, strong families, and strong communities. Join us...","categories": [],
+        "excerpt":"Send a Message Name Email Subject General Question Topic Suggestion Guest Inquiry Media / Business Message Website Send Message Your message is securely processed through our serverless system. Connect With Us We’re building strong men, strong families, and strong communities. Join us on the platforms where we share truth, leadership,...","categories": [],
         "tags": [],
         "url": "/menofgod-site/contact/",
         "teaser": null
