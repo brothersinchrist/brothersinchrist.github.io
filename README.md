@@ -1,4 +1,4 @@
-<h1>MEN OF GOD — CMS USER GUIDE</>
+<h1>MEN OF GOD — CMS USER GUIDE</h1>
 
 This guide explains how to create and manage content for the Men of God website using the CMS. It covers:
 
@@ -8,10 +8,8 @@ This guide explains how to create and manage content for the Men of God website 
 - Products
 - Navigation
 - Hosts
-
-Hero system
-
-Styling system
+- Hero system
+- Styling system
 
 <h1>🧱 1. BLOG POSTS</h1>
 
