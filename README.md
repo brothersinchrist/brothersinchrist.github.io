@@ -146,7 +146,7 @@ Used on the “About / Hosts” page.
 Your SCSS system is built around:
 
 <h3>Rugged Palette</h3>
-```html
+```scss
 $rugged-accent
 $rugged-dark
 $rugged-light
