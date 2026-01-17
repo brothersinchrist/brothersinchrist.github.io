@@ -36,7 +36,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Men of God",
-        "excerpt":"Men of God Forging men of God through truth, brotherhood, and battle-tested faith. Men of God exists to call men out of passivity and into purpose — to stand firm, lead courageously, and live surrendered to Christ in every arena of life. Through honest conversations, biblical teaching, and real stories...","categories": [],
+        "excerpt":"Men of God Forging men of courage, conviction, and Christlike strength. Listen to the Latest Episode Read the Latest Articles Be watchful, stand firm in the faith, act like men, be strong. 1 Corinthians 16:13 We are called to lead with strength and humility. Men of God Ministry Forging men...","categories": [],
         "tags": [],
         "url": "/menofgod-site/",
         "teaser": null
