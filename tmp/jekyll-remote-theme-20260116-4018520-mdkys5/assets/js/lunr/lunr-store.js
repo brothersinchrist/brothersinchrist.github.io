@@ -6,7 +6,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Blog",
-        "excerpt":"Faithful Stewards of Gods Grace January 13, 2026 • DeShun Bland The Lord Jesus is full of Grace and truth, and by his blood we have been made new so let us buy faith in Christ walk in the newness that he has given us in obedience Read More Trust...","categories": [],
+        "excerpt":"Faithful Stewards of Gods Grace January 13, 2026 • DeShun Bland The Lord Jesus is full of Grace and truth, and by his blood we have been made new so let us buy faith in Christ walk in the newness that he has given us in obedience Trust and Obey...","categories": [],
         "tags": [],
         "url": "/menofgod-site/blog/",
         "teaser": null
