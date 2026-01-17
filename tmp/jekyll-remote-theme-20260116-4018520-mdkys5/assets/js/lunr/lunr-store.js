@@ -54,7 +54,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Store",
-        "excerpt":"   Store                                                 Man of God Mug                   $15                   View Product                                              Men of God Tee                   $29.99                   View Product                                              Men of God Tee                   $29.99                   View Product                 ","categories": [],
+        "excerpt":"   Store                                                 Man of God Mug                   $15                   View Product                                              Men of God Tee                   $29.99                   View Product                                              Men's Faith Journal                   $29.99                   View Product                 ","categories": [],
         "tags": [],
         "url": "/menofgod-site/store/",
         "teaser": null
@@ -2549,9 +2549,9 @@ var store = [{
         "url": "/menofgod-site/store/ct-shirt-001/",
         "teaser": null
       },{
-        "title": "Men of God Tee",
-        "excerpt":"This rugged tee is built for men who refuse to settle for comfort when they’re called to courage.      100% combed ring‑spun cotton   Shoulder‑to‑shoulder taping   Tear‑away label   Printed on demand via Printful  ","categories": [],
+        "title": "Men's Faith Journal",
+        "excerpt":"Faith Journal   Journal for daily reflections and scripture notes.  ","categories": [],
         "tags": [],
-        "url": "/menofgod-site/store/mog-tee-001/",
+        "url": "/menofgod-site/store/mog-journal-001/",
         "teaser": null
       }]
