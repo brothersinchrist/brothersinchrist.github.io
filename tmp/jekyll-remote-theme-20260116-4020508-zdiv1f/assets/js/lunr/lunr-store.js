@@ -54,7 +54,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Store",
-        "excerpt":"   Store                                                Men of God Tee            $29.99              View Product                ","categories": [],
+        "excerpt":"   Store                                                 Men of God Tee                   $29.99                   View Product                 ","categories": [],
         "tags": [],
         "url": "/menofgod-site/store/",
         "teaser": null
