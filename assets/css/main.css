@@ -6628,7 +6628,6 @@ blockquote {
 ----------------------------------------- */
 .mog-section-contact {
   width: 100%;
-  display: flex;
   justify-content: center;
   padding: 3rem 0;
   margin: 3rem 0;
