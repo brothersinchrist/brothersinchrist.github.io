@@ -30,7 +30,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Episodes",
-        "excerpt":"   Episodes                                                                                     Why Most Christians Get Discipleship Wrong                   January 08, 2026                                                                              Your browser does not support the audio element.                                Hard Men Podcast                   July 09, 2025        • Eric Conn                   Building Bands of Brothers: What This Looks Like in Ogden                ","categories": [],
+        "excerpt":"Episodes Example YouTube Episode January 17, 2026 • Example Author This is an example summary Why Most Christians Get Discipleship Wrong January 08, 2026 Your browser does not support the audio element. Hard Men Podcast July 09, 2025 • Eric Conn Building Bands of Brothers: What This Looks Like in...","categories": [],
         "tags": [],
         "url": "/menofgod-site/episodes/",
         "teaser": null
@@ -2523,6 +2523,12 @@ var store = [{
         "excerpt":"This video is awesome!  You should really check it out.  ","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/14/this-is-another-test-post.html",
+        "teaser": null
+      },{
+        "title": "Example YouTube Episode",
+        "excerpt":"Example content  ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/2026/01/17/example-youtube-episode.html",
         "teaser": null
       },{
         "title": "Man of God Mug",
