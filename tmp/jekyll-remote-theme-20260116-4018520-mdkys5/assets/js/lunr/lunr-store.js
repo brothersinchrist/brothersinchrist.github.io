@@ -41,12 +41,6 @@ var store = [{
         "url": "/menofgod-site/",
         "teaser": null
       },{
-        "title": "About",
-        "excerpt":"Men of God Men called to lead their families and serve their country. Honest conversations between Christian men - fathers, husbands, and patriots - growing as leaders under God for their families and communities. Our Mission Men of God exists to foster honest conversations that help men lead their families...","categories": [],
-        "tags": [],
-        "url": "/menofgod-site/old-about/",
-        "teaser": null
-      },{
         "title": "Blog",
         "excerpt":"Men of God Blog Honest conversations to inspire men to lead their families and communities. Faithful Stewards of Gods Grace The Lord Jesus is full of Grace and truth, and by his blood we have been made new so let us buy faith in Christ walk in the newness that...","categories": [],
         "tags": [],
