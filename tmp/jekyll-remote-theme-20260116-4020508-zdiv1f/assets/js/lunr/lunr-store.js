@@ -42,7 +42,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Partner Organizations",
-        "excerpt":"Partner Organizations These are the ministries, networks, and organizations we stand alongside. Caring Solutions Hope Offered. Futures Changed. Visit Website Strong Fathers Ministry Helping men lead their families with courage and biblical conviction. Visit Website Samaritan's Purse Samaritan's Purse brings physical relief and the hope of the Gospel to hurting...","categories": [],
+        "excerpt":"Partner Organizations   These are the ministries, networks, and organizations we stand alongside.                                              Caring Solutions              Hope Offered. Futures Changed.                            Visit Website                                                        Samaritan's Purse              Samaritan's Purse brings physical relief and the hope of the Gospel to hurting people around the world.                            Visit Website                     ","categories": [],
         "tags": [],
         "url": "/menofgod-site/partners/",
         "teaser": null
