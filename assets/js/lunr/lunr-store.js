@@ -42,7 +42,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Partner Organizations",
-        "excerpt":"Partner Organizations   These are the ministries, networks, and organizations we stand alongside.                                              Strong Fathers Ministry              Helping men lead their families with courage and biblical conviction.                            Visit Website                                                        Iron Brotherhood Network              A nationwide network of men committed to discipleship and accountability.                            Visit Website                     ","categories": [],
+        "excerpt":"Partner Organizations These are the ministries, networks, and organizations we stand alongside. Caring Solutions Hope Offered. Futures Changed. Visit Website Strong Fathers Ministry Helping men lead their families with courage and biblical conviction. Visit Website Iron Brotherhood Network A nationwide network of men committed to discipleship and accountability. Visit Website...","categories": [],
         "tags": [],
         "url": "/menofgod-site/partners/",
         "teaser": null
@@ -51,6 +51,12 @@ var store = [{
         "excerpt":"    Check out our gear                                                 Man of God Mug                   $15                   View Product                                              Men of God Tee                   $29.99                   View Product                                              Men's Faith Journal                   $29.99                   View Product                 ","categories": [],
         "tags": [],
         "url": "/menofgod-site/store/",
+        "teaser": null
+      },{
+        "title": "Caring Solutions",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/partners/caring-solutions/",
         "teaser": null
       },{
         "title": "Strong Fathers Ministry",
