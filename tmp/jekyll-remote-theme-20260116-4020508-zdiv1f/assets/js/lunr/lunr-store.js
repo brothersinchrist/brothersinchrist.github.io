@@ -35,7 +35,7 @@ var store = [{
         "url": "/menofgod-site/episodes/",
         "teaser": null
       },{
-        "title": "Men of God",
+        "title": "Home",
         "excerpt":"Men of God Forging men of courage, conviction, and strength in Christ. Listen to the Latest Episode Read the Latest Articles Be watchful, stand firm in the faith, act like men, be strong. 1 Corinthians 16:13 Forging men of God through truth, brotherhood, and battle-tested faith. Men of God exists...","categories": [],
         "tags": [],
         "url": "/menofgod-site/",
