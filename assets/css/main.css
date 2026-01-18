@@ -6055,6 +6055,191 @@ blockquote {
 }
 
 /* -----------------------------------------
+   EPISODE PAGE — MEDIA FIRST LAYOUT
+----------------------------------------- */
+.mog-episode {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  color: #f7f5f2;
+}
+
+/* -----------------------------------------
+   MEDIA BLOCK
+----------------------------------------- */
+.mog-episode-media {
+  margin-bottom: 2rem;
+}
+
+.mog-episode-cover {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: block;
+}
+
+.mog-episode-audio {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Video wrapper */
+.mog-video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.mog-video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* -----------------------------------------
+   HEADER
+----------------------------------------- */
+.mog-episode-header {
+  margin-bottom: 2rem;
+}
+
+.mog-episode-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mog-episode-meta {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mog-episode-summary {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* -----------------------------------------
+   PLATFORM BADGES
+----------------------------------------- */
+.mog-episode-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.mog-episode-platforms .platform {
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: background 0.2s ease;
+}
+
+.platform.spotify {
+  background: #1db954;
+  border-color: #1aa34a;
+}
+
+.platform.apple {
+  background: #b300b3;
+  border-color: #990099;
+}
+
+.platform.youtube {
+  background: #cc0000;
+  border-color: #a30000;
+}
+
+.platform.rss {
+  background: #ff6600;
+  border-color: #cc5200;
+}
+
+.platform:hover {
+  filter: brightness(1.1);
+}
+
+/* -----------------------------------------
+   BODY
+----------------------------------------- */
+.mog-episode-body {
+  margin-top: 2rem;
+  line-height: 1.7;
+}
+
+/* -----------------------------------------
+   STICKY MINI PLAYER
+----------------------------------------- */
+.mog-mini-player {
+  position: fixed;
+  bottom: -200px;
+  left: 0;
+  right: 0;
+  background: #111;
+  border-top: 2px solid #4a3f35;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: bottom 0.3s ease;
+  z-index: 9999;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.mog-mini-player.active {
+  bottom: 0;
+}
+
+.mini-video iframe {
+  width: 140px;
+  height: 80px;
+  border: 0;
+}
+
+.mini-audio audio {
+  width: 200px;
+}
+
+.mini-info {
+  flex: 1;
+  color: #f7f5f2;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.mini-close {
+  background: transparent;
+  border: none;
+  color: #f7f5f2;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+.mini-close:hover {
+  color: rgb(103.7165354331, 88.2992125984, 74.2834645669);
+}
+
+/* -----------------------------------------
    PRODUCT GRID + CARDS
    ----------------------------------------- */
 .mog-products-grid {
