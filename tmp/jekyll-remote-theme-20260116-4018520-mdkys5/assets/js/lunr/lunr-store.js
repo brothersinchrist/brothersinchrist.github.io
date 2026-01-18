@@ -42,7 +42,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Partner Organizations",
-        "excerpt":"Partner Organizations These are the ministries, networks, and organizations we stand alongside. Strong Fathers Ministry Helping men lead their families with courage and biblical conviction. Visit Website Iron Brotherhood Network A nationwide network of men committed to discipleship and accountability. Visit Website Caring Solutions Hope Offered. Futures Changed. Visit Website...","categories": [],
+        "excerpt":"Partner Organizations   These are the ministries, networks, and organizations we stand alongside.                                              Strong Fathers Ministry              Helping men lead their families with courage and biblical conviction.                            Visit Website                                                        Iron Brotherhood Network              A nationwide network of men committed to discipleship and accountability.                            Visit Website                     ","categories": [],
         "tags": [],
         "url": "/menofgod-site/partners/",
         "teaser": null
@@ -63,12 +63,6 @@ var store = [{
         "excerpt":" ","categories": [],
         "tags": [],
         "url": "/menofgod-site/partners/example2/",
-        "teaser": null
-      },{
-        "title": "Caring Solutions",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "/menofgod-site/partners/slug/",
         "teaser": null
       },{
         "title": "Edge Case: Nested and Mixed Lists",
