@@ -5225,22 +5225,25 @@ body {
    DARK MODE — RUGGED CHARCOAL
    Auto mode (system) + manual override
 ----------------------------------------- */
+/* -----------------------------------------
+   DARK MODE — RUGGED CHARCOAL
+----------------------------------------- */
 /* Auto dark mode (system preference) */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --page-bg: #1a1a1a; /* rugged charcoal */
+    --page-bg: #1a1a1a;
     --text-color: #e6e6e6;
-    --card-bg: #111;
-    --card-border: #222;
-    --accent: #4a3f35; /* leather brown stays consistent */
+    --card-bg: #141414;
+    --card-border: #222222;
+    --accent: #4a3f35;
   }
 }
 /* Manual override: dark */
 :root[data-theme=dark] {
   --page-bg: #1a1a1a;
   --text-color: #e6e6e6;
-  --card-bg: #111;
-  --card-border: #222;
+  --card-bg: #141414;
+  --card-border: #222222;
   --accent: #4a3f35;
 }
 
