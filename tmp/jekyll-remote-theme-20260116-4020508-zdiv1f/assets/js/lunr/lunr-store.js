@@ -42,7 +42,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Partner Organizations",
-        "excerpt":"Partner Organizations   These are the ministries, networks, and organizations we stand alongside.                                              The Salvation Army - Warner Robins Corp              Wherever there is a need in warner robins, georgia  you'll find The Salvation Army. Find out how you can help.                            Visit Website                     ","categories": [],
+        "excerpt":"Partner Organizations   These are the ministries, networks, and organizations we stand alongside.           ","categories": [],
         "tags": [],
         "url": "/menofgod-site/partners/",
         "teaser": null
