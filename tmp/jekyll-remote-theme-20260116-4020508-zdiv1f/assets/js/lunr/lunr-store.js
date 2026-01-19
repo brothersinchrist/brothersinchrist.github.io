@@ -2538,7 +2538,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Example YouTube Episode",
-        "excerpt":"Example content  ","categories": [],
+        "excerpt":"Example content:     This is a custom MoG stylized section   We forge men of courage...     This is a scripture 🙏 block     \"Be strong and courageous.\"   Joshua 1:9    These are stylized buttons:   Primary Button   Secondary Button  ","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/17/example-youtube-episode.html",
         "teaser": null
