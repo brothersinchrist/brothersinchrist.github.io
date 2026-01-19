@@ -5870,6 +5870,12 @@ h1, h2, h3 {
   border-color: var(--accent);
 }
 
+@media (max-width: 768px) {
+  .mog-theme-toggle-btn {
+    margin: 1rem 1.5rem 0;
+    width: calc(100% - 3rem);
+  }
+}
 /* -----------------------------------------
    MOBILE NAV
 ----------------------------------------- */
