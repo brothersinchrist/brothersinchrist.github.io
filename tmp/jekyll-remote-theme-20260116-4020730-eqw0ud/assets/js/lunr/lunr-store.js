@@ -65,12 +65,6 @@ var store = [{
         "url": "/menofgod-site/partners/example1/",
         "teaser": null
       },{
-        "title": "Iron Brotherhood Network",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "/menofgod-site/partners/example2/",
-        "teaser": null
-      },{
         "title": "Samaritan's Purse",
         "excerpt":" ","categories": [],
         "tags": [],
