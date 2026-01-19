@@ -30,7 +30,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Episodes",
-        "excerpt":"                                                                                      Example YouTube Episode                   January 17, 2026        • Example Author        • Video                   This is an example summary                                                                                     Why Most Christians Get Discipleship Wrong                   January 08, 2026               • Video                                                                                        Hard Men Podcast                   July 09, 2025        • Eric Conn                          Building Bands of Brothers: What This Looks Like in Ogden                ","categories": [],
+        "excerpt":"                                                                                      Example YouTube Episode                   January 17, 2026        • Example Author        • Video                   This is an example summary                                                                                     Why Most Christians Get Discipleship Wrong                   January 08, 2026               • Video                                                                                                  Hard Men Podcast                   July 09, 2025        • Eric Conn        • Audio                   Building Bands of Brothers: What This Looks Like in Ogden                ","categories": [],
         "tags": [],
         "url": "/menofgod-site/episodes/",
         "teaser": null
