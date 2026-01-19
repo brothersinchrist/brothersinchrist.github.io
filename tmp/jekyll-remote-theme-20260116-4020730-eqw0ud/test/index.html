@@ -8899,8 +8899,19 @@ combine these words quis laborum sunt sint. Nisi et Lorem reprehenderit cupidata
   const root = document.documentElement;
   const saved = localStorage.getItem("theme");
 
+  function updateActiveButton(theme) {
+    document.querySelectorAll(".mog-theme-btn").forEach(btn =>
+      btn.classList.remove("active")
+    );
+    const activeBtn = document.getElementById(`theme-${theme}`);
+    if (activeBtn) activeBtn.classList.add("active");
+  }
+
   if (saved) {
     root.setAttribute("data-theme", saved);
+    updateActiveButton(saved);
+  } else {
+    updateActiveButton("system");
   }
 
   function setTheme(theme) {
@@ -8911,6 +8922,7 @@ combine these words quis laborum sunt sint. Nisi et Lorem reprehenderit cupidata
       root.setAttribute("data-theme", theme);
       localStorage.setItem("theme", theme);
     }
+    updateActiveButton(theme);
   }
 </script>
 </body>
