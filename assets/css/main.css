@@ -6290,14 +6290,27 @@ h1, h2, h3 {
   margin-top: 4rem;
 }
 
+/* -----------------------------------------
+   GRID LAYOUT
+----------------------------------------- */
 .mog-footer-inner {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  gap: 2rem;
+  gap: 2.5rem;
+  /* Mobile-first: single column */
   grid-template-columns: 1fr;
+  /* Tablet: two columns */
 }
-@media (min-width: 800px) {
+@media (min-width: 600px) {
+  .mog-footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.mog-footer-inner {
+  /* Desktop: three columns */
+}
+@media (min-width: 900px) {
   .mog-footer-inner {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -6336,6 +6349,7 @@ h1, h2, h3 {
 ----------------------------------------- */
 .mog-footer-social {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 1rem;
 }
@@ -6360,6 +6374,7 @@ h1, h2, h3 {
   text-align: center;
   font-size: 0.9rem;
   opacity: 0.75;
+  line-height: 1.5;
 }
 
 .mog-footer-bottom a {
@@ -6372,17 +6387,19 @@ h1, h2, h3 {
 }
 
 /* -----------------------------------------
-   DARK MODE ENHANCEMENTS
+   RESPONSIVE TWEAKS
 ----------------------------------------- */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) .mog-footer {
-    background: var(--card-bg);
+@media (max-width: 500px) {
+  .mog-footer {
+    padding: 2.5rem 1.25rem;
+  }
+  .mog-footer-section h4 {
+    font-size: 1rem;
+  }
+  .mog-footer-bottom {
+    font-size: 0.85rem;
   }
 }
-:root[data-theme=dark] .mog-footer {
-  background: var(--card-bg);
-}
-
 /* -----------------------------------------
    PAGE LAYOUTS
 ----------------------------------------- */
