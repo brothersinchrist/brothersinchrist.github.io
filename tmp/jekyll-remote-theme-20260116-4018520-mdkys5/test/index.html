@@ -8891,5 +8891,23 @@ combine these words quis laborum sunt sint. Nisi et Lorem reprehenderit cupidata
     }
   });
 </script>
+<script>
+  const root = document.documentElement;
+  const saved = localStorage.getItem("theme");
+
+  if (saved) {
+    root.setAttribute("data-theme", saved);
+  }
+
+  function setTheme(theme) {
+    if (theme === "system") {
+      root.removeAttribute("data-theme");
+      localStorage.removeItem("theme");
+    } else {
+      root.setAttribute("data-theme", theme);
+      localStorage.setItem("theme", theme);
+    }
+  }
+</script>
 </body>
 </html>
