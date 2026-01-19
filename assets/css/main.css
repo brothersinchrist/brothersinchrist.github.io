@@ -5268,8 +5268,8 @@ html, body {
 
 /* Base body styles */
 body {
-  background: #f7f5f2;
-  color: #2d2d2d;
+  background: var(--page-bg);
+  color: var(--text-color);
   font-family: "Inter", "Roboto Slab", serif;
   letter-spacing: 0.3px;
 }
