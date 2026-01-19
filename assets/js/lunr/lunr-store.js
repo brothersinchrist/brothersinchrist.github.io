@@ -2532,7 +2532,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Faithful Stewards of Gods Grace",
-        "excerpt":"Living for God 1Therefore, since Christ suffered in his body, arm yourselves also with the same attitude, because whoever suffers in the body is done with sin. 2 As a result, they do not live the rest of their earthly lives for evil human desires, but rather for the will of...","categories": [],
+        "excerpt":"Living for God 1_Therefore, since Christ suffered in his body, arm yourselves also with the same attitude, because whoever suffers in the body is done with sin._ 2 As a result, they do not live the rest of their earthly lives for evil human desires, but rather for the will of...","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/13/faithful-stewards-of-gods-grace.html",
         "teaser": null
