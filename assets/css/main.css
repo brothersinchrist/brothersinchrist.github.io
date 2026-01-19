@@ -5299,6 +5299,15 @@ blockquote {
   opacity: 0.9;
 }
 
+/* Smooth theme transition */
+html {
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+}
+
+body, .mog-card, .mog-partner-card, .mog-card-product, .mog-episode-card, .mog-blog-card, .mog-header, .mog-nav, .mog-hero {
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+}
+
 /* -----------------------------------------
    TYPOGRAPHY SYSTEM
 ----------------------------------------- */
