@@ -5744,6 +5744,44 @@ h1, h2, h3 {
 }
 
 /* -----------------------------------------
+   THEME TOGGLE — RUGGED STEEL SWITCH
+----------------------------------------- */
+.mog-theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mog-theme-btn {
+  background: transparent;
+  border: 2px solid #3a3a3a;
+  color: #f7f5f2;
+  padding: 0.35rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.mog-theme-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgb(83.5, 83.5, 83.5);
+}
+.mog-theme-btn.active {
+  background: #4a3f35;
+  border-color: #4a3f35;
+  color: #fff;
+}
+
+/* Icons (optional, if you want them later)
+.mog-theme-btn svg {
+  width: 18px;
+  height: 18px;
+}
+*/
+/* -----------------------------------------
    STRUCTURAL SECTIONS
 ----------------------------------------- */
 /* -----------------------------------------
