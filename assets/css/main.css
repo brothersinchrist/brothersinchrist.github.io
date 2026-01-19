@@ -5222,6 +5222,38 @@ body {
 /* Typography */
 /* Spacing scale (optional future use) */
 /* -----------------------------------------
+   DARK MODE — RUGGED CHARCOAL
+   Auto mode (system) + manual override
+----------------------------------------- */
+/* Auto dark mode (system preference) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --page-bg: #1a1a1a; /* rugged charcoal */
+    --text-color: #e6e6e6;
+    --card-bg: #111;
+    --card-border: #222;
+    --accent: #4a3f35; /* leather brown stays consistent */
+  }
+}
+/* Manual override: dark */
+:root[data-theme=dark] {
+  --page-bg: #1a1a1a;
+  --text-color: #e6e6e6;
+  --card-bg: #111;
+  --card-border: #222;
+  --accent: #4a3f35;
+}
+
+/* Manual override: light */
+:root[data-theme=light] {
+  --page-bg: #f7f5f2;
+  --text-color: #2d2d2d;
+  --card-bg: #ffffff;
+  --card-border: #ddd;
+  --accent: #4a3f35;
+}
+
+/* -----------------------------------------
    GLOBAL RESET + BASE
 ----------------------------------------- */
 *,
