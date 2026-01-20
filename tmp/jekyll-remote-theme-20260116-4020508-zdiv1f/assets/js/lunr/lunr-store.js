@@ -2588,24 +2588,24 @@ var store = [{
         "title": "Our Mission",
         "excerpt":"Our Mission Men of God exists to equip men to lead with courage, conviction, and Christ at the center. We believe men are called to stand firm, build strong families, and serve their communities with humility and strength. Our ministry is built on a simple truth: God uses ordinary men...","categories": [],
         "tags": [],
-        "url": "/menofgod-site/about/01-mission/",
+        "url": "/menofgod-site/webparts_about/01-mission.html",
         "teaser": null
       },{
         "title": "Our Story",
         "excerpt":"We’re two men from two different worlds — different careers, different upbringings — yet God brought our families together and made us brothers. One of us spent 24 years traveling the world in the United States Air Force. The other has lived his entire life in Georgia, working hard, raising...","categories": [],
         "tags": [],
-        "url": "/menofgod-site/about/02-story/",
+        "url": "/menofgod-site/webparts_about/02-story.html",
         "teaser": null
       },{
         "title": "Meet the Hosts",
         "excerpt":"DeShun Husband, father, and co‑host and founder of Men of God. A devoted husband and father of five, raising four sons and a daughter. He and his family are active in their church, and his faith guides how he leads at home and serves his community. Grounded in God’s truth,...","categories": [],
         "tags": [],
-        "url": "/menofgod-site/about/03-hosts/",
+        "url": "/menofgod-site/webparts_about/03-hosts.html",
         "teaser": null
       },{
         "title": "Our Partners",
         "excerpt":"               View All Partners     ","categories": [],
         "tags": [],
-        "url": "/menofgod-site/about/04-partners/",
+        "url": "/menofgod-site/webparts_about/04-partners.html",
         "teaser": null
       }]
