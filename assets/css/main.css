@@ -5849,6 +5849,14 @@ h1, h2, h3 {
   color: var(--accent);
 }
 
+/* Desktop: toggle sits inline with nav */
+.mog-nav .mog-theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
 /* -----------------------------------------
    THEME TOGGLE (Header Version)
 ----------------------------------------- */
@@ -5927,6 +5935,16 @@ h1, h2, h3 {
   transform: translateY(-9px) rotate(-45deg);
 }
 
+/* Mobile: toggle moves to top of menu */
+@media (max-width: 768px) {
+  .mog-nav .mog-theme-toggle-btn {
+    order: -1; /* puts it at the top */
+    width: calc(100% - 3rem);
+    margin: 0 1.5rem 1rem;
+    padding: 0.75rem;
+    justify-content: flex-start;
+  }
+}
 /* -----------------------------------------
    MOBILE MENU
 ----------------------------------------- */
