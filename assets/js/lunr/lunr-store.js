@@ -2598,7 +2598,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Meet the Hosts",
-        "excerpt":"DeShun A devoted husband and father of five, raising four sons and a daughter. He and his family are active in their church, and his faith guides how he leads at home and serves his community. Grounded in God’s truth, he seeks to live with integrity, humility, and purpose, modeling...","categories": [],
+        "excerpt":"DeShun Husband, father, and co‑host and founder of Men of God. A devoted husband and father of five, raising four sons and a daughter. He and his family are active in their church, and his faith guides how he leads at home and serves his community. Grounded in God’s truth,...","categories": [],
         "tags": [],
         "url": "/menofgod-site/about/03-hosts/",
         "teaser": null
