@@ -5873,11 +5873,10 @@ h1, h2, h3 {
 .mog-theme-toggle-btn img {
   width: 20px;
   height: 20px;
-  filter: brightness(0.9);
+  display: block;
+  /* Make black SVGs match theme text color */
+  filter: brightness(0) invert(1); /* default: white */
   transition: filter 0.2s ease;
-}
-.mog-theme-toggle-btn img:hover {
-  filter: brightness(1.2);
 }
 
 @media (max-width: 768px) {
