@@ -5874,11 +5874,23 @@ h1, h2, h3 {
   width: 20px;
   height: 20px;
   display: block;
-  /* Make black SVGs match theme text color */
-  filter: brightness(0) invert(1); /* default: white */
+  object-fit: contain;
+  /* Default: dark mode → white icons */
+  filter: brightness(0) invert(1);
   transition: filter 0.2s ease;
 }
 
+/* Light mode → black icons */
+:root[data-theme=light] .mog-theme-toggle-btn img {
+  filter: brightness(0);
+}
+
+/* System mode → follow OS */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) .mog-theme-toggle-btn img {
+    filter: brightness(0);
+  }
+}
 @media (max-width: 768px) {
   .mog-theme-toggle-btn {
     margin: 1rem 1.5rem 0;
