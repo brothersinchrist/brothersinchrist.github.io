@@ -54,7 +54,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Partner Organizations",
-        "excerpt":"Partner Organizations   These are the ministries, networks, and organizations we stand alongside.           ","categories": [],
+        "excerpt":"These are the ministries, networks, and organizations we stand alongside.           ","categories": [],
         "tags": [],
         "url": "/menofgod-site/partners/",
         "teaser": null
