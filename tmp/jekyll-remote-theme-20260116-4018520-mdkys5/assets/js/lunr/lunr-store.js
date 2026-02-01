@@ -2567,6 +2567,12 @@ var store = [{
         "url": "/menofgod-site/2026/01/18/the-lord-is-my-portion.html",
         "teaser": null
       },{
+        "title": "New post again",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/2026/02/01/new-post-again.html",
+        "teaser": null
+      },{
         "title": "Man of God Mug",
         "excerpt":"MiG for drinking delicious coffee.  ","categories": [],
         "tags": [],
