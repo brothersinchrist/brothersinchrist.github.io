@@ -2576,7 +2576,7 @@ var store = [{
         "title": "Man of God Mug",
         "excerpt":"Mug for drinking delicious coffee.  ","categories": ["mug"],
         "tags": [],
-        "url": "/menofgod-site/store/mog-man-of-god-mug/",
+        "url": "/menofgod-site/store/2026-01-16-man-of-god-mug/",
         "teaser": null
       },{
         "title": "Men of God Tee",
@@ -2588,7 +2588,7 @@ var store = [{
         "title": "Men's Faith Journal",
         "excerpt":"Faith Journal   Journal for daily reflections and scripture notes.  ","categories": [],
         "tags": [],
-        "url": "/menofgod-site/store/mog-journal-001/",
+        "url": "/menofgod-site/store/mog-tee-001/",
         "teaser": null
       },{
         "title": "Our Mission",
