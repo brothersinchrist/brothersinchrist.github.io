@@ -18,7 +18,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Blog",
-        "excerpt":"Why Strong Men Build Strong Families January 18, 2026 • Tom Parks Biblical leadership starts at home. Here’s why it matters more than ever. The Lord is My portion! January 18, 2026 • Tom Parks When God calls us to step out in faith, He proves Himself to be our...","categories": [],
+        "excerpt":"New post February 01, 2026 • Tom Parks This is a test Why Strong Men Build Strong Families January 18, 2026 • Tom Parks Biblical leadership starts at home. Here’s why it matters more than ever. The Lord is My portion! January 18, 2026 • Tom Parks When God calls...","categories": [],
         "tags": [],
         "url": "/menofgod-site/blog/",
         "teaser": null
@@ -2565,6 +2565,12 @@ var store = [{
         "excerpt":"Luke 9:2-3 ESV [2] and he sent them out to proclaim the kingdom of God and to heal. [3] And he said to them, “Take nothing for your journey, no staff, nor bag, nor bread, nor money; and do not have two tunics.” He is enough! This verse was describing...","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/18/the-lord-is-my-portion.html",
+        "teaser": null
+      },{
+        "title": "New post",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/2026/02/01/lesspgreaternew-postlesspgreater.html",
         "teaser": null
       },{
         "title": "Man of God Mug",
