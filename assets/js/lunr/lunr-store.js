@@ -2574,7 +2574,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Man of God Mug",
-        "excerpt":"MiG for drinking delicious coffee.  ","categories": [],
+        "excerpt":"Mug for drinking delicious coffee.  ","categories": ["mug"],
         "tags": [],
         "url": "/menofgod-site/store/mog-man-of-god-mug/",
         "teaser": null
