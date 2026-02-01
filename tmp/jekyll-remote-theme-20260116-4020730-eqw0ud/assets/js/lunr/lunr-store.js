@@ -60,7 +60,7 @@ var store = [{
         "teaser": null
       },{
         "title": "The Shop",
-        "excerpt":"                                                                   Man of God Mug                       $15                          View Product                                                      Men of God Tee - White                       $29.99                          View Product                                                      Men's Faith Journal                       $29.99                          View Product                                         ","categories": [],
+        "excerpt":"                                                                   Man of God Mug                       $15                          View Product                                                      Men's Faith Journal                       $29.99                          View Product                                         ","categories": [],
         "tags": [],
         "url": "/menofgod-site/store/",
         "teaser": null
@@ -2583,12 +2583,6 @@ var store = [{
         "excerpt":"Faith Journal   Journal for daily reflections and scripture notes.  ","categories": [],
         "tags": [],
         "url": "/menofgod-site/store/mog-journal-001/",
-        "teaser": null
-      },{
-        "title": "Men of God Tee - White",
-        "excerpt":"Men of God - Iron Sharpens Iron T-shirt  ","categories": ["apparel"],
-        "tags": [],
-        "url": "/menofgod-site/store/men-of-god-tee/",
         "teaser": null
       },{
         "title": "Our Mission",
