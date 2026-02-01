@@ -60,7 +60,7 @@ var store = [{
         "teaser": null
       },{
         "title": "The Shop",
-        "excerpt":"                                                                   Man of God Mug                       $15                          View Product                                                      Men's Faith Journal                       $29.99                          View Product                                         ","categories": [],
+        "excerpt":"                                                                   Man of God Mug                       $15                          View Product                                                      Men of God Tee                       $29.99                          View Product                                                      Men's Faith Journal                       $29.99                          View Product                                         ","categories": [],
         "tags": [],
         "url": "/menofgod-site/store/",
         "teaser": null
@@ -2577,6 +2577,12 @@ var store = [{
         "excerpt":"Mug for drinking delicious coffee.  ","categories": ["mug"],
         "tags": [],
         "url": "/menofgod-site/store/mog-man-of-god-mug/",
+        "teaser": null
+      },{
+        "title": "Men of God Tee",
+        "excerpt":"Nice shirt  ","categories": ["apparel"],
+        "tags": [],
+        "url": "/menofgod-site/store/men-of-god-tee/",
         "teaser": null
       },{
         "title": "Men's Faith Journal",
