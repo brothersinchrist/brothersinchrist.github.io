@@ -2591,6 +2591,12 @@ var store = [{
         "url": "/menofgod-site/store/mog-tee-001/",
         "teaser": null
       },{
+        "title": "00 Hero",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/webparts/about/00-hero.html",
+        "teaser": null
+      },{
         "title": "Our Mission",
         "excerpt":"Test Men of God exists to equip men to lead with courage, conviction, and Christ at the center. We believe men are called to stand firm, build strong families, and serve their communities with humility and strength. Our ministry is built on a simple truth: God uses ordinary men —...","categories": [],
         "tags": [],
@@ -2603,51 +2609,45 @@ var store = [{
         "url": "/menofgod-site/webparts/about/02-story.html",
         "teaser": null
       },{
-        "title": "About",
+        "title": "00 Hero",
         "excerpt":" ","categories": [],
         "tags": [],
-        "url": "/menofgod-site/webparts/heroes/about.html",
+        "url": "/menofgod-site/webparts/blog/00-hero.html",
         "teaser": null
       },{
-        "title": "Blog",
+        "title": "00 Hero",
         "excerpt":" ","categories": [],
         "tags": [],
-        "url": "/menofgod-site/webparts/heroes/blog.html",
+        "url": "/menofgod-site/webparts/contact/00-hero.html",
         "teaser": null
       },{
-        "title": "Contact",
+        "title": "00 Hero",
         "excerpt":" ","categories": [],
         "tags": [],
-        "url": "/menofgod-site/webparts/heroes/contact.html",
+        "url": "/menofgod-site/webparts/episodes/00-hero.html",
         "teaser": null
       },{
-        "title": "Episodes",
+        "title": "00 Hero",
         "excerpt":" ","categories": [],
         "tags": [],
-        "url": "/menofgod-site/webparts/heroes/episodes.html",
+        "url": "/menofgod-site/webparts/home/00-hero.html",
         "teaser": null
       },{
-        "title": "Home",
+        "title": "00 Hero",
         "excerpt":" ","categories": [],
         "tags": [],
-        "url": "/menofgod-site/webparts/heroes/home.html",
-        "teaser": null
-      },{
-        "title": "Partners",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "/menofgod-site/webparts/heroes/partners.html",
-        "teaser": null
-      },{
-        "title": "Store",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "/menofgod-site/webparts/heroes/store.html",
+        "url": "/menofgod-site/webparts/partners/00-hero.html",
         "teaser": null
       },{
         "title": "intro",
         "excerpt":"These are the ministries, networks, and organizations we stand alongside.  ","categories": [],
         "tags": [],
         "url": "/menofgod-site/webparts/partners/01-intro.html",
+        "teaser": null
+      },{
+        "title": "00 Hero",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/webparts/store/00-hero.html",
         "teaser": null
       }]
