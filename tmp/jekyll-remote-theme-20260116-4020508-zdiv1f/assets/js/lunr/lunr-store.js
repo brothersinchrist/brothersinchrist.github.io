@@ -2603,6 +2603,12 @@ var store = [{
         "url": "/menofgod-site/webparts/about/mission.html",
         "teaser": null
       },{
+        "title": "Object Object",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/webparts/about/object-object.html",
+        "teaser": null
+      },{
         "title": "Our Story",
         "excerpt":"We’re two men from two different worlds—different careers, different upbringings — yet God brought our families together and made us brothers. One of us spent 24 years traveling the world in the United States Air Force. The other has lived his entire life in Georgia, working hard, raising a family,...","categories": [],
         "tags": [],
