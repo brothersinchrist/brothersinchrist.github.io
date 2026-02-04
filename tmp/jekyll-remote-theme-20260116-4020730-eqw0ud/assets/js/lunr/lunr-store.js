@@ -2591,22 +2591,22 @@ var store = [{
         "url": "/menofgod-site/store/mog-tee-001/",
         "teaser": null
       },{
-        "title": "00 Hero",
+        "title": "Hero",
         "excerpt":" ","categories": [],
         "tags": [],
-        "url": "/menofgod-site/webparts/about/00-hero.html",
+        "url": "/menofgod-site/webparts/about/hero.html",
         "teaser": null
       },{
         "title": "Our Mission",
         "excerpt":"Test Men of God exists to equip men to lead with courage, conviction, and Christ at the center. We believe men are called to stand firm, build strong families, and serve their communities with humility and strength. Our ministry is built on a simple truth: God uses ordinary men —...","categories": [],
         "tags": [],
-        "url": "/menofgod-site/webparts/about/01-mission.html",
+        "url": "/menofgod-site/webparts/about/mission.html",
         "teaser": null
       },{
         "title": "Our Story",
         "excerpt":"We’re two men from two different worlds—different careers, different upbringings — yet God brought our families together and made us brothers. One of us spent 24 years traveling the world in the United States Air Force. The other has lived his entire life in Georgia, working hard, raising a family,...","categories": [],
         "tags": [],
-        "url": "/menofgod-site/webparts/about/02-story.html",
+        "url": "/menofgod-site/webparts/about/story.html",
         "teaser": null
       },{
         "title": "00 Hero",
