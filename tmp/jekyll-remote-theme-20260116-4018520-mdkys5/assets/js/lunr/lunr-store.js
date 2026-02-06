@@ -11,9 +11,9 @@ var store = [{
         "url": "/menofgod-site/hosts/tom.html",
         "teaser": null
       },{
-        "title": "About",
+        "title": null,
         "excerpt":" ","categories": [],
-        "tags": [],
+        "tags": null,
         "url": "/menofgod-site/about/",
         "teaser": null
       },{
