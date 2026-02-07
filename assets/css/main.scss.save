@@ -109,7 +109,9 @@
 
   <main class="mog-main">
 
-    /* -----------------------------------------
+  
+
+  /* -----------------------------------------
    MEN OF GOD — MASTER STYLESHEET
    Loads all SCSS partials from _sass/mog/
 ----------------------------------------- */
@@ -160,7 +162,7 @@
 @import "mog/products";
 
 
-  </main>
+</main>
 
   <footer class="mog-footer">
   <div class="mog-footer-inner">
