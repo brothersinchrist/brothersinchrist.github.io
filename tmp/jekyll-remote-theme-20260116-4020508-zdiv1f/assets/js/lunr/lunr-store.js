@@ -42,7 +42,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Episodes",
-        "excerpt":"                                                                                             Test Post                   February 11, 2026               • Video                                                                                                  Example YouTube Episode                   January 17, 2026        • Example Author        • Video                   This is an example summary                                                                                            Why Most Christians Get Discipleship Wrong                   January 08, 2026               • Video                                                                                                                  Hard Men Podcast                   July 09, 2025               • Audio                         ","categories": [],
+        "excerpt":"Test Post February 11, 2026 • Video Example YouTube Episode January 17, 2026 • Example Author • Video This is an example summary Why Most Christians Get Discipleship Wrong January 04, 2026 • Video Why Most Christians Get Discipleship Wrong: It Starts Here | Pastor Josh Howerton Hard Men Podcast...","categories": [],
         "tags": [],
         "url": "/menofgod-site/episodes/",
         "teaser": null
@@ -2483,6 +2483,12 @@ var store = [{
         "url": "/menofgod-site/2025/07/09/hard-men-podcast.html",
         "teaser": null
       },{
+        "title": "Why Most Christians Get Discipleship Wrong",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/2026/01/04/why-most-christians-get-discipleship-wrong.html",
+        "teaser": null
+      },{
         "title": "First post!",
         "excerpt":"Blog post   This is a blog post   There will be many more…hopefully  ","categories": [],
         "tags": [],
@@ -2511,12 +2517,6 @@ var store = [{
         "excerpt":"Hopefully this content is rendering on the page.  ","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/08/lets-test-out-our-blog-posts-from-cms.html",
-        "teaser": null
-      },{
-        "title": "Why Most Christians Get Discipleship Wrong",
-        "excerpt":"In this challenging message from Pastor Josh Howerton, we start the new year with training that matters: How to be a disciple. True discipleship doesn’t begin with your effort, it begins with trusting in what Christ has already done. Through the Bible, we see that our debt is fully paid,...","categories": [],
-        "tags": [],
-        "url": "/menofgod-site/2026/01/08/why-most-christians-get-discipleship-wrong.html",
         "teaser": null
       },{
         "title": "New blog post",
