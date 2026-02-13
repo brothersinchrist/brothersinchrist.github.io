@@ -2526,7 +2526,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Trust and Obey God!",
-        "excerpt":"“Some time later God tested Abraham. He said to him, “Abraham!” “Here I am,” he replied. Then God said, “Take your son, your only son, whom you love—Isaac—and go to the region of Moriah. Sacrifice him there as a burnt offering on a mountain I will show you.”” Genesis 22:1-2...","categories": [],
+        "excerpt":" ","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/10/trust-and-obey-god.html",
         "teaser": null
