@@ -2514,7 +2514,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Let's test out our blog posts from CMS",
-        "excerpt":"Hopefully this content is rendering on the page.  ","categories": [],
+        "excerpt":" ","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/08/lets-test-out-our-blog-posts-from-cms.html",
         "teaser": null
