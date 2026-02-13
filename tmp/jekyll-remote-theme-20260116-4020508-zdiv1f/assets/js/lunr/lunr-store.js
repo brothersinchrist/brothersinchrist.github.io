@@ -2556,7 +2556,7 @@ var store = [{
         "teaser": null
       },{
         "title": "The Lord is My portion!",
-        "excerpt":"Luke 9:2-3 ESV [2] and he sent them out to proclaim the kingdom of God and to heal. [3] And he said to them, “Take nothing for your journey, no staff, nor bag, nor bread, nor money; and do not have two tunics.” He is enough! This verse was describing...","categories": [],
+        "excerpt":" ","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/18/the-lord-is-my-portion.html",
         "teaser": null
