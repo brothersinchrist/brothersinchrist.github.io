@@ -2502,7 +2502,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Another sample post",
-        "excerpt":"Blog post   This is a blog post   There will be many more…hopefully  ","categories": [],
+        "excerpt":" ","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/08/another-sample-post.html",
         "teaser": null
