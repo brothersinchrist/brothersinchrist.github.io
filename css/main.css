@@ -2115,6 +2115,80 @@ h3 {
     height: 100px;
   }
 }
+/* -----------------------------------------
+   PULLQUOTE BLOCK
+----------------------------------------- */
+.mog-pullquote {
+  text-align: center;
+}
+
+/* Container */
+.mog-pullquote__inner {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 2rem 2.5rem;
+  background: var(--color-blockquote-bg);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* Quote text */
+.mog-pullquote__content {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* Reference */
+.mog-pullquote__reference {
+  font-size: 0.875rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* -----------------------------------------
+   Alignment
+----------------------------------------- */
+.mog-pullquote--left {
+  text-align: left;
+}
+
+.mog-pullquote--center {
+  text-align: center;
+}
+
+.mog-pullquote--right {
+  text-align: right;
+}
+
+/* -----------------------------------------
+   Breakout
+----------------------------------------- */
+.mog-pullquote--breakout .mog-pullquote__inner {
+  max-width: 1000px;
+}
+
+/* -----------------------------------------
+   Types
+----------------------------------------- */
+/* Default (normal quote) */
+.mog-pullquote--default .mog-pullquote__inner {
+  border-left-color: var(--color-accent);
+}
+
+/* Scripture style */
+.mog-pullquote--scripture .mog-pullquote__inner {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3rem;
+  background: var(--color-scripture-bg, var(--color-blockquote-bg));
+  border-left-color: var(--color-scripture-accent, var(--color-accent));
+}
+.mog-pullquote--scripture .mog-pullquote__content {
+  font-style: normal;
+  line-height: 1.7;
+}
+
 body {
   background: #f5f5f5;
 }
