@@ -1,4 +1,4 @@
-  const header = document.querySelector('.mog-header');
+const header = document.querySelector('.mog-header');
   const nav = document.getElementById('mogNav');
   const toggle = document.getElementById('mogNavToggle');
 
