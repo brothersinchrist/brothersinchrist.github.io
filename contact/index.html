@@ -267,11 +267,13 @@
 </section>
 
 <!-- MODAL -->
-<div id="contact-modal" class="mog-modal" aria-hidden="true">
-  <div class="mog-modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <h2 id="modal-title">Message Sent</h2>
-    <p id="modal-message">Thank you for reaching out. We’ve received your message.</p>
-    <button class="mog-modal-close" onclick="closeModal()">Close</button>
+<div id="contact-overlay" class="mog-modal-overlay">
+  <div id="contact-modal" class="mog-modal" aria-hidden="true">
+    <div class="mog-modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <h2 id="modal-title">Message Sent</h2>
+      <p id="modal-message">Thank you for reaching out. We’ve received your message.</p>
+      <button class="mog-modal-close" onclick="closeModal()">Close</button>
+    </div>
   </div>
 </div>
 
@@ -284,69 +286,38 @@
 <script>
 function openModal(title, message) {
   const modal = document.getElementById("contact-modal");
+  const overlay = document.getElementById("contact-overlay");
+
   document.getElementById("modal-title").textContent = title;
   document.getElementById("modal-message").textContent = message;
 
   modal.classList.add("active");
-  modal.setAttribute("aria-hidden", "false");
+  overlay.classList.add("show");
 
+  modal.setAttribute("aria-hidden", "false");
   document.querySelector(".mog-modal-close").focus();
 }
 
 function closeModal() {
   const modal = document.getElementById("contact-modal");
+  const overlay = document.getElementById("contact-overlay");
+
   modal.classList.remove("active");
+  overlay.classList.remove("show");
+
   modal.setAttribute("aria-hidden", "true");
 }
 
+// ESC close
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeModal();
 });
 
+// Click overlay to close
 document.addEventListener("click", (e) => {
-  const modal = document.getElementById("contact-modal");
-  if (e.target === modal) closeModal();
+  const overlay = document.getElementById("contact-overlay");
+  if (e.target === overlay) closeModal();
 });
-</script>
-
-<script>
-async function handleContactSubmit(e) {
-  e.preventDefault();
-
-  const form = e.target;
-  const data = new FormData(form);
-
-  const payload = {
-    name: data.get("name"),
-    email: data.get("email"),
-    subject: data.get("subject"),
-    message: data.get("message"),
-    website: data.get("website")
-  };
-
-  try {
-    const res = await fetch(
-      "https://menofgod-contact-worker.menofgod-worker.workers.dev",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
-      }
-    );
-
-    if (res.ok) {
-      openModal("Message Sent", "Thanks for reaching out. We’re grateful for your message and will follow up soon.");
-      form.reset();
-    } else {
-      alert("There was a problem sending your message.");
-    }
-  } catch (err) {
-    console.error(err);
-    alert("Unexpected error occurred. Check console/debug panel.");
-  }
-
-  return false;
-}
 </script>
 
 
