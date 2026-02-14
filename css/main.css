@@ -738,24 +738,43 @@ h3 {
 ----------------------------------------- */
 @media (max-width: 768px) {
   .mog-nav {
-    display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
-    flex-direction: column;
+    height: 100vh;
     background: var(--color-card-bg);
-    border-top: 1px solid var(--color-card-border);
-    border-bottom: 1px solid var(--color-card-border);
-    padding: 1rem 0;
+    flex-direction: column;
+    padding-top: 2rem;
+    z-index: 10000;
+    display: none;
+    overflow-y: auto;
+    pointer-events: auto;
     animation: mogSlideDown 0.3s ease forwards;
   }
   .mog-nav.show {
     display: flex;
   }
+  .mog-nav {
+    /* -----------------------------
+       MOBILE NAV LINKS
+    ----------------------------- */
+  }
   .mog-nav a {
-    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
     width: 100%;
+    min-height: 3rem;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--color-text);
+    touch-action: manipulation;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .mog-nav a:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--color-accent);
   }
   .mog-nav-toggle {
     display: flex;
@@ -764,9 +783,7 @@ h3 {
     padding: 1rem 1rem;
   }
 }
-/* -----------------------------------------
-   ANIMATION
------------------------------------------ */
+/* Slide down animation */
 @keyframes mogSlideDown {
   from {
     opacity: 0;
@@ -1880,6 +1897,10 @@ h3 {
 /* -----------------------------------------
    MODAL OVERLAY
 ----------------------------------------- */
+.mog-modal {
+  color: #f5f5f5; /* fallback for broken vars */
+}
+
 .mog-modal-overlay {
   position: fixed;
   inset: 0;
@@ -1922,7 +1943,7 @@ h3 {
   }
 }
 
-.mog-modal.show {
+.mog-modal.active {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
@@ -1960,7 +1981,8 @@ h3 {
   width: 20px;
   height: 20px;
   display: block;
-  filter: brightness(0) invert(1);
+  filter: none;
+  opacity: 0.9;
 }
 :root[data-theme=light] .mog-modal-close img {
   filter: brightness(0);
@@ -1969,6 +1991,11 @@ h3 {
 /* -----------------------------------------
    BODY
 ----------------------------------------- */
+.mog-modal-body,
+.mog-modal-title {
+  color: #ffffff;
+}
+
 .mog-modal-body {
   font-size: 1rem;
   line-height: 1.65;
