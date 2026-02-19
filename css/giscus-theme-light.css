@@ -1,19 +1,20 @@
-/* ---------------------------------------------------------
-   Men of God — Giscus Theme (LIGHT)
---------------------------------------------------------- */
+/*!
+ * Men of God — Giscus Light Theme (site-integrated)
+ */
 
-/* Light theme variables */
-:root {
-  --giscus-bg: #f8f6f2;
-  --giscus-bg-alt: #ffffff;
-  --giscus-text: #1f1f1c;
-  --giscus-text-muted: rgba(31, 31, 28, 0.65);
-  --giscus-border: rgba(60, 45, 20, 0.12);
-  --giscus-border-strong: rgba(60, 45, 20, 0.18);
-  --giscus-accent: #c28a2c;
-  --giscus-accent-hover: #9f6f22;
-  --giscus-focus: rgba(194, 138, 44, 0.35);
+main {
+  /* Color tokens from your site theme */
+  --giscus-bg: var(--color-page-bg, #f8f6f2);
+  --giscus-bg-alt: var(--color-card-bg, #ffffff);
+  --giscus-text: var(--color-text, #1f1f1c);
+  --giscus-text-muted: var(--color-text-muted, rgba(31, 31, 28, 0.65));
+  --giscus-border: var(--color-card-border, rgba(60, 45, 20, 0.12));
+  --giscus-border-strong: var(--color-border, rgba(60, 45, 20, 0.18));
+  --giscus-accent: var(--color-accent, #c28a2c);
+  --giscus-accent-hover: var(--color-accent-dark, #9f6f22);
+  --giscus-focus: var(--color-focus-ring, rgba(194, 138, 44, 0.35));
 
+  /* Typography tokens */
   --giscus-font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Arial, sans-serif;
   --giscus-font-heading: "Source Sans 3", system-ui, sans-serif;
@@ -34,7 +35,7 @@
   --giscus-weight-bold: 700;
 }
 
-/* Base typography + layout */
+/* Layout & Overrides */
 .giscus {
   background: var(--giscus-bg) !important;
   color: var(--giscus-text) !important;
@@ -44,21 +45,18 @@
   letter-spacing: var(--giscus-tracking-body) !important;
 }
 
-/* Comment text */
 .gsc-comment-content {
   font-family: var(--giscus-font-body) !important;
   font-size: var(--giscus-font-size-body) !important;
   line-height: var(--giscus-line-height-body) !important;
 }
 
-/* Metadata */
 .gsc-comment-author,
 .gsc-comment-time {
   font-size: var(--giscus-font-size-meta) !important;
   opacity: 0.8 !important;
 }
 
-/* Headings inside comments */
 .giscus h1,
 .giscus h2,
 .giscus h3 {
@@ -66,11 +64,8 @@
   font-weight: var(--giscus-weight-bold) !important;
   letter-spacing: var(--giscus-tracking-wide) !important;
   line-height: var(--giscus-line-height-heading) !important;
-  margin-top: 1.5rem !important;
-  margin-bottom: 0.75rem !important;
 }
 
-/* Links */
 .giscus a {
   color: var(--giscus-accent) !important;
   font-weight: var(--giscus-weight-medium) !important;
@@ -79,38 +74,27 @@
   color: var(--giscus-accent-hover) !important;
 }
 
-/* Comment boxes */
 .gsc-comment-box,
 .gsc-comment-box-textarea {
   background: var(--giscus-bg-alt) !important;
   border-color: var(--giscus-border) !important;
-  color: var(--giscus-text) !important;
-  font-family: var(--giscus-font-body) !important;
-  font-size: var(--giscus-font-size-body) !important;
 }
 
-/* Buttons */
 .gsc-reply-button,
 .gsc-comment-box-buttons button {
   background: var(--giscus-accent) !important;
   color: #fff !important;
-  border: none !important;
-  font-weight: var(--giscus-weight-semibold) !important;
-  letter-spacing: var(--giscus-tracking-wide) !important;
 }
 .gsc-reply-button:hover,
 .gsc-comment-box-buttons button:hover {
   background: var(--giscus-accent-hover) !important;
 }
 
-/* Borders */
 .gsc-divider,
 .gsc-comment {
   border-color: var(--giscus-border) !important;
 }
 
-/* Focus ring */
 .giscus :focus-visible {
   outline: 2px solid var(--giscus-focus) !important;
-  outline-offset: 2px !important;
 }
