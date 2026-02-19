@@ -1,100 +1,79 @@
-/*!
- * Men of God — Giscus Dark Theme (site-integrated)
- */
-
 main {
-  /* Color tokens from your site theme (dark mode) */
-  --giscus-bg: #171717;
-  --giscus-bg-alt: #242424;
-  --giscus-text: #f2f2f0;
-  --giscus-text-muted: rgba(242, 242, 240, 0.7);
-  --giscus-border: rgba(255, 255, 255, 0.14);
-  --giscus-border-strong: rgba(255, 255, 255, 0.2);
-  --giscus-accent: var(--color-accent-light, #e0bc78);
-  --giscus-accent-hover: var(--color-accent, #c28a2c);
-  --giscus-focus: var(--color-focus-ring, rgba(194, 138, 44, 0.5));
+  /* ================================
+     Base Surface Layering
+  ================================= */
 
-  /* Typography tokens */
-  --giscus-font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Arial, sans-serif;
-  --giscus-font-heading: "Source Sans 3", system-ui, sans-serif;
+  --color-canvas-default: #171717;              /* page bg */
+  --color-canvas-overlay: #1f1f1f;              /* alt bg */
+  --color-canvas-inset: #1f1f1f;
+  --color-canvas-subtle: #242424;               /* card bg */
 
-  --giscus-font-size-body: 1rem;
-  --giscus-font-size-meta: 0.875rem;
-  --giscus-font-size-heading: 1.25rem;
+  --color-border-default: rgba(255,255,255,0.14);
+  --color-border-muted: rgba(255,255,255,0.08);
 
-  --giscus-line-height-body: 1.6;
-  --giscus-line-height-heading: 1.2;
+  /* ================================
+     Text Hierarchy
+  ================================= */
 
-  --giscus-tracking-body: 0.01em;
-  --giscus-tracking-wide: 0.05em;
+  --color-fg-default: #f2f2f0;
+  --color-fg-muted: rgba(242,242,240,0.7);
+  --color-fg-subtle: rgba(242,242,240,0.55);
 
-  --giscus-weight-normal: 400;
-  --giscus-weight-medium: 500;
-  --giscus-weight-semibold: 600;
-  --giscus-weight-bold: 700;
-}
+  /* ================================
+     Accent (Warm Brass)
+  ================================= */
 
-/* Layout & Overrides */
-.giscus {
-  background: var(--giscus-bg) !important;
-  color: var(--giscus-text) !important;
-  font-family: var(--giscus-font-body) !important;
-  font-size: var(--giscus-font-size-body) !important;
-  line-height: var(--giscus-line-height-body) !important;
-  letter-spacing: var(--giscus-tracking-body) !important;
-}
+  --color-accent-fg: #c28a2c;
+  --color-accent-emphasis: #c28a2c;
+  --color-accent-muted: rgba(194,138,44,0.35);
+  --color-accent-subtle: rgba(194,138,44,0.12);
 
-.gsc-comment-content {
-  font-family: var(--giscus-font-body) !important;
-  font-size: var(--giscus-font-size-body) !important;
-  line-height: var(--giscus-line-height-body) !important;
-}
+  /* ================================
+     Buttons
+  ================================= */
 
-.gsc-comment-author,
-.gsc-comment-time {
-  font-size: var(--giscus-font-size-meta) !important;
-  opacity: 0.8 !important;
-}
+  --color-btn-text: #f2f2f0;
+  --color-btn-bg: #2c2c2c;
+  --color-btn-border: rgba(255,255,255,0.14);
+  --color-btn-hover-bg: #333333;
+  --color-btn-active-bg: #3a3a3a;
 
-.giscus h1,
-.giscus h2,
-.giscus h3 {
-  font-family: var(--giscus-font-heading) !important;
-  font-weight: var(--giscus-weight-bold) !important;
-  letter-spacing: var(--giscus-tracking-wide) !important;
-  line-height: var(--giscus-line-height-heading) !important;
-}
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-bg: #c28a2c;
+  --color-btn-primary-border: #c28a2c;
+  --color-btn-primary-hover-bg: #9f6f22;
+  --color-btn-primary-hover-border: #9f6f22;
+  --color-btn-primary-selected-bg: #9f6f22;
 
-.giscus a {
-  color: var(--giscus-accent) !important;
-  font-weight: var(--giscus-weight-medium) !important;
-}
-.giscus a:hover {
-  color: var(--giscus-accent-hover) !important;
-}
+  /* ================================
+     Inputs
+  ================================= */
 
-.gsc-comment-box,
-.gsc-comment-box-textarea {
-  background: var(--giscus-bg-alt) !important;
-  border-color: var(--giscus-border) !important;
-}
+  --color-input-bg: #2c2c2c;
 
-.gsc-reply-button,
-.gsc-comment-box-buttons button {
-  background: var(--giscus-accent) !important;
-  color: #000 !important;
-}
-.gsc-reply-button:hover,
-.gsc-comment-box-buttons button:hover {
-  background: var(--giscus-accent-hover) !important;
-}
+  /* ================================
+     Semantic
+  ================================= */
 
-.gsc-divider,
-.gsc-comment {
-  border-color: var(--giscus-border) !important;
-}
+  --color-success-fg: #3f8f67;
+  --color-attention-fg: #c9973b;
+  --color-danger-fg: #b64a4a;
 
-.giscus :focus-visible {
-  outline: 2px solid var(--giscus-focus) !important;
+  --color-danger-muted: rgba(182,74,74,0.4);
+  --color-danger-subtle: rgba(182,74,74,0.12);
+
+  /* ================================
+     Syntax Highlighting
+     (Softened, Warmed GitHub Dark)
+  ================================= */
+
+  --color-prettylights-syntax-comment: rgba(242,242,240,0.5);
+  --color-prettylights-syntax-constant: #e0bc78;
+  --color-prettylights-syntax-entity: #d4a94b;
+  --color-prettylights-syntax-storage-modifier-import: #f2f2f0;
+  --color-prettylights-syntax-entity-tag: #c28a2c;
+  --color-prettylights-syntax-keyword: #d4a94b;
+  --color-prettylights-syntax-string: #e8d2a4;
+  --color-prettylights-syntax-variable: #f0c674;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #b64a4a;
 }

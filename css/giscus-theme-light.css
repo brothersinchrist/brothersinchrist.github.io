@@ -1,100 +1,79 @@
-/*!
- * Men of God — Giscus Light Theme (site-integrated)
- */
-
 main {
-  /* Color tokens from your site theme */
-  --giscus-bg: var(--color-page-bg, #f8f6f2);
-  --giscus-bg-alt: var(--color-card-bg, #ffffff);
-  --giscus-text: var(--color-text, #1f1f1c);
-  --giscus-text-muted: var(--color-text-muted, rgba(31, 31, 28, 0.65));
-  --giscus-border: var(--color-card-border, rgba(60, 45, 20, 0.12));
-  --giscus-border-strong: var(--color-border, rgba(60, 45, 20, 0.18));
-  --giscus-accent: var(--color-accent, #c28a2c);
-  --giscus-accent-hover: var(--color-accent-dark, #9f6f22);
-  --giscus-focus: var(--color-focus-ring, rgba(194, 138, 44, 0.35));
+  /* ================================
+     Base Surface Layering
+  ================================= */
 
-  /* Typography tokens */
-  --giscus-font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Arial, sans-serif;
-  --giscus-font-heading: "Source Sans 3", system-ui, sans-serif;
+  --color-canvas-default: #f8f6f2;
+  --color-canvas-overlay: #f0ede7;
+  --color-canvas-inset: #f0ede7;
+  --color-canvas-subtle: #ffffff;
 
-  --giscus-font-size-body: 1rem;
-  --giscus-font-size-meta: 0.875rem;
-  --giscus-font-size-heading: 1.25rem;
+  --color-border-default: rgba(60,45,20,0.18);
+  --color-border-muted: rgba(60,45,20,0.08);
 
-  --giscus-line-height-body: 1.6;
-  --giscus-line-height-heading: 1.2;
+  /* ================================
+     Text Hierarchy
+  ================================= */
 
-  --giscus-tracking-body: 0.01em;
-  --giscus-tracking-wide: 0.05em;
+  --color-fg-default: #1f1f1c;
+  --color-fg-muted: rgba(31,31,28,0.65);
+  --color-fg-subtle: rgba(31,31,28,0.5);
 
-  --giscus-weight-normal: 400;
-  --giscus-weight-medium: 500;
-  --giscus-weight-semibold: 600;
-  --giscus-weight-bold: 700;
-}
+  /* ================================
+     Accent (Warm Brass)
+  ================================= */
 
-/* Layout & Overrides */
-.giscus {
-  background: var(--giscus-bg) !important;
-  color: var(--giscus-text) !important;
-  font-family: var(--giscus-font-body) !important;
-  font-size: var(--giscus-font-size-body) !important;
-  line-height: var(--giscus-line-height-body) !important;
-  letter-spacing: var(--giscus-tracking-body) !important;
-}
+  --color-accent-fg: #c28a2c;
+  --color-accent-emphasis: #c28a2c;
+  --color-accent-muted: rgba(194,138,44,0.35);
+  --color-accent-subtle: rgba(194,138,44,0.12);
 
-.gsc-comment-content {
-  font-family: var(--giscus-font-body) !important;
-  font-size: var(--giscus-font-size-body) !important;
-  line-height: var(--giscus-line-height-body) !important;
-}
+  /* ================================
+     Buttons
+  ================================= */
 
-.gsc-comment-author,
-.gsc-comment-time {
-  font-size: var(--giscus-font-size-meta) !important;
-  opacity: 0.8 !important;
-}
+  --color-btn-text: #1f1f1c;
+  --color-btn-bg: #fbfaf7;
+  --color-btn-border: rgba(60,45,20,0.18);
+  --color-btn-hover-bg: #f0ede7;
+  --color-btn-active-bg: #e6e2db;
 
-.giscus h1,
-.giscus h2,
-.giscus h3 {
-  font-family: var(--giscus-font-heading) !important;
-  font-weight: var(--giscus-weight-bold) !important;
-  letter-spacing: var(--giscus-tracking-wide) !important;
-  line-height: var(--giscus-line-height-heading) !important;
-}
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-bg: #c28a2c;
+  --color-btn-primary-border: #c28a2c;
+  --color-btn-primary-hover-bg: #9f6f22;
+  --color-btn-primary-hover-border: #9f6f22;
+  --color-btn-primary-selected-bg: #9f6f22;
 
-.giscus a {
-  color: var(--giscus-accent) !important;
-  font-weight: var(--giscus-weight-medium) !important;
-}
-.giscus a:hover {
-  color: var(--giscus-accent-hover) !important;
-}
+  /* ================================
+     Inputs
+  ================================= */
 
-.gsc-comment-box,
-.gsc-comment-box-textarea {
-  background: var(--giscus-bg-alt) !important;
-  border-color: var(--giscus-border) !important;
-}
+  --color-input-bg: #fbfaf7;
 
-.gsc-reply-button,
-.gsc-comment-box-buttons button {
-  background: var(--giscus-accent) !important;
-  color: #fff !important;
-}
-.gsc-reply-button:hover,
-.gsc-comment-box-buttons button:hover {
-  background: var(--giscus-accent-hover) !important;
-}
+  /* ================================
+     Semantic
+  ================================= */
 
-.gsc-divider,
-.gsc-comment {
-  border-color: var(--giscus-border) !important;
-}
+  --color-success-fg: #3f8f67;
+  --color-attention-fg: #c9973b;
+  --color-danger-fg: #b64a4a;
 
-.giscus :focus-visible {
-  outline: 2px solid var(--giscus-focus) !important;
+  --color-danger-muted: rgba(182,74,74,0.35);
+  --color-danger-subtle: rgba(182,74,74,0.1);
+
+  /* ================================
+     Syntax Highlighting
+     (Warm parchment tone)
+  ================================= */
+
+  --color-prettylights-syntax-comment: rgba(31,31,28,0.55);
+  --color-prettylights-syntax-constant: #9f6f22;
+  --color-prettylights-syntax-entity: #c28a2c;
+  --color-prettylights-syntax-storage-modifier-import: #1f1f1c;
+  --color-prettylights-syntax-entity-tag: #c28a2c;
+  --color-prettylights-syntax-keyword: #9f6f22;
+  --color-prettylights-syntax-string: #7a5b1a;
+  --color-prettylights-syntax-variable: #a97c29;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #b64a4a;
 }
