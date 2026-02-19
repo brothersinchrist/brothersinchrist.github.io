@@ -108,6 +108,13 @@
   </url>
 
   <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/products/product-x/</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/hosts/deshun/</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -116,13 +123,6 @@
 
   <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/hosts/tom/</loc>
-    <lastmod>2026-02-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/products/product-x/</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
