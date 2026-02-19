@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   const root = document.documentElement;
-
-  let giscusReady = false;
-
   const toggleBtn = document.getElementById("themeToggleBtn");
   const themeMenu = document.getElementById("themeMenu");
   const themeLabel = document.getElementById("themeLabel");
@@ -13,37 +11,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const options = themeMenu.querySelectorAll("li");
   const systemQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-  // -------------------------------------------------
-  // GISCUS THEME SYNC
-  // -------------------------------------------------
-  function updateGiscusTheme() {
-    const iframe = document.querySelector("iframe.giscus-frame");
-    if (!iframe || !giscusReady) return;
+  let giscusReady = false;
 
-    const theme = document.documentElement.getAttribute("data-theme");
-    const url = window.giscusThemes[theme] || window.giscusThemes.light;
-
-    iframe.contentWindow.postMessage(
-      {
-        giscus: {
-          setConfig: {
-            theme: url
-          }
-        }
-      },
-      "https://giscus.app"
-    );
+  // -------------------------------------------------
+  // Helper: Resolve the actual theme ("light" or "dark")
+  // -------------------------------------------------
+  function getEffectiveTheme(theme) {
+    if (theme === "system") {
+      return systemQuery.matches ? "dark" : "light";
+    }
+    return theme;
   }
 
   // -------------------------------------------------
-  // Helpers
+  // Update UI label + icon
   // -------------------------------------------------
-
   function setLabelAndIcon(theme) {
-    if (theme === "light") {
+    const mode = theme === "system" ? "system" : getEffectiveTheme(theme);
+
+    if (mode === "light") {
       themeLabel.textContent = "Light";
       themeIcon.src = window.mogIconBase + "sun.svg";
-    } else if (theme === "dark") {
+    } else if (mode === "dark") {
       themeLabel.textContent = "Dark";
       themeIcon.src = window.mogIconBase + "moon.svg";
     } else {
@@ -52,34 +41,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function applySystemTheme() {
-    const prefersDark = systemQuery.matches;
-    const effective = prefersDark ? "dark" : "light";
-    root.setAttribute("data-theme", effective);
+  // -------------------------------------------------
+  // GISCUS THEME SYNC
+  // -------------------------------------------------
+  function updateGiscusTheme() {
+    const iframe = document.querySelector("iframe.giscus-frame");
+    if (!iframe || !giscusReady) return;
 
-    // Sync Giscus
-    updateGiscusTheme();
+    const current = root.getAttribute("data-theme");
+    const effective = getEffectiveTheme(current);
+    const url = window.giscusThemes[effective];
+
+    iframe.contentWindow.postMessage(
+      { giscus: { setConfig: { theme: url } } },
+      "https://giscus.app"
+    );
   }
 
+  // -------------------------------------------------
+  // Apply any theme ("light", "dark", or "system")
+  // -------------------------------------------------
   function applyTheme(theme) {
-    if (theme === "system") {
-      localStorage.setItem("theme", "system");
-      applySystemTheme();
-      setLabelAndIcon("system");
-    } else {
-      root.setAttribute("data-theme", theme);
-      localStorage.setItem("theme", theme);
-      setLabelAndIcon(theme);
+    const effective = getEffectiveTheme(theme);
 
-      // Sync Giscus
-      updateGiscusTheme();
-    }
+    root.setAttribute("data-theme", effective);
+    localStorage.setItem("theme", theme);
+
+    setLabelAndIcon(theme);
+    updateGiscusTheme();
   }
 
   // -------------------------------------------------
   // Dropdown behavior
   // -------------------------------------------------
-
   toggleBtn.addEventListener("click", () => {
     themeMenu.classList.toggle("open");
   });
@@ -91,9 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // -------------------------------------------------
-  // Theme selection
+  // Theme selection click events
   // -------------------------------------------------
-
   options.forEach((opt) => {
     opt.addEventListener("click", () => {
       const selected = opt.getAttribute("data-theme");
@@ -103,24 +96,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // -------------------------------------------------
-  // React to OS theme changes
+  // React to OS theme changes (if in System mode)
   // -------------------------------------------------
-
   systemQuery.addEventListener("change", () => {
-    const saved = localStorage.getItem("theme");
-    if (saved === "system") {
-      applySystemTheme();
+    if (localStorage.getItem("theme") === "system") {
+      applyTheme("system");
     }
   });
 
   // -------------------------------------------------
   // Initial load
   // -------------------------------------------------
-
   const saved = localStorage.getItem("theme") || "system";
   applyTheme(saved);
 
-  // Ensure Giscus syncs once iframe loads
+  // -------------------------------------------------
+  // Giscus iframe ready → sync theme
+  // -------------------------------------------------
   window.addEventListener("message", (event) => {
     if (event.origin !== "https://giscus.app") return;
     if (event.data?.giscus?.discussion) {
@@ -128,4 +120,5 @@ document.addEventListener("DOMContentLoaded", () => {
       updateGiscusTheme();
     }
   });
+
 });
