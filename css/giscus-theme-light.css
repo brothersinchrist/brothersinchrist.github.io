@@ -1,25 +1,26 @@
 main {
-  /* ================================
-     Base Surface Layering
+  /* =================================
+     Surface Hierarchy
   ================================= */
 
   --color-canvas-default: #f8f6f2;
-  --color-canvas-overlay: #f0ede7;
+  --color-canvas-overlay: #f8f6f2;
   --color-canvas-inset: #f0ede7;
   --color-canvas-subtle: #ffffff;
 
-  --color-border-default: rgba(60,45,20,0.18);
-  --color-border-muted: rgba(60,45,20,0.08);
+  /* Remove borders */
+  --color-border-default: transparent;
+  --color-border-muted: transparent;
 
-  /* ================================
-     Text Hierarchy
+  /* =================================
+     Text
   ================================= */
 
   --color-fg-default: #1f1f1c;
   --color-fg-muted: rgba(31,31,28,0.65);
   --color-fg-subtle: rgba(31,31,28,0.5);
 
-  /* ================================
+  /* =================================
      Accent (Warm Brass)
   ================================= */
 
@@ -28,30 +29,30 @@ main {
   --color-accent-muted: rgba(194,138,44,0.35);
   --color-accent-subtle: rgba(194,138,44,0.12);
 
-  /* ================================
+  /* =================================
      Buttons
   ================================= */
 
   --color-btn-text: #1f1f1c;
   --color-btn-bg: #fbfaf7;
-  --color-btn-border: rgba(60,45,20,0.18);
+  --color-btn-border: transparent;
   --color-btn-hover-bg: #f0ede7;
   --color-btn-active-bg: #e6e2db;
 
   --color-btn-primary-text: #ffffff;
   --color-btn-primary-bg: #c28a2c;
-  --color-btn-primary-border: #c28a2c;
+  --color-btn-primary-border: transparent;
   --color-btn-primary-hover-bg: #9f6f22;
-  --color-btn-primary-hover-border: #9f6f22;
+  --color-btn-primary-hover-border: transparent;
   --color-btn-primary-selected-bg: #9f6f22;
 
-  /* ================================
+  /* =================================
      Inputs
   ================================= */
 
   --color-input-bg: #fbfaf7;
 
-  /* ================================
+  /* =================================
      Semantic
   ================================= */
 
@@ -59,21 +60,34 @@ main {
   --color-attention-fg: #c9973b;
   --color-danger-fg: #b64a4a;
 
-  --color-danger-muted: rgba(182,74,74,0.35);
-  --color-danger-subtle: rgba(182,74,74,0.1);
-
-  /* ================================
-     Syntax Highlighting
-     (Warm parchment tone)
+  /* =================================
+     Syntax
   ================================= */
 
   --color-prettylights-syntax-comment: rgba(31,31,28,0.55);
   --color-prettylights-syntax-constant: #9f6f22;
   --color-prettylights-syntax-entity: #c28a2c;
-  --color-prettylights-syntax-storage-modifier-import: #1f1f1c;
-  --color-prettylights-syntax-entity-tag: #c28a2c;
   --color-prettylights-syntax-keyword: #9f6f22;
   --color-prettylights-syntax-string: #7a5b1a;
   --color-prettylights-syntax-variable: #a97c29;
   --color-prettylights-syntax-brackethighlighter-unmatched: #b64a4a;
+}
+
+/* =================================
+   Elevated Comment Cards
+================================= */
+
+main .gsc-comment {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  box-shadow:
+    0 6px 18px rgba(60,45,20,0.08),
+    0 1px 0 rgba(255,255,255,0.6) inset;
+  padding: 1rem;
+}
+
+/* Subtle reply indentation */
+main .gsc-replies {
+  margin-left: 1.5rem;
 }
