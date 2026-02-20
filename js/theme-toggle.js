@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     } catch (e) {
       // Don't break the rest of the script
+      console.error("Failed to update Giscus theme:", e);
     }
   }
 

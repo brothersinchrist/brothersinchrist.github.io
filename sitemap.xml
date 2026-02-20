@@ -3,13 +3,6 @@
 
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/partners/2026-02-15-caring-solutions/</loc>
-    <lastmod>2026-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/partners/2026-02-15-samaritans-purse/</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -18,6 +11,13 @@
 
   <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/partners/2026-02-15-the-salvation-army-warner-robins-corp/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/partners/2026-02-15-caring-solutions/</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -129,7 +129,7 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/pages/about/</loc>
+    <loc>https://brothersinchrist.github.io/menofgod-site/tags/</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -137,6 +137,13 @@
 
   <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/pages/about/</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -157,13 +164,6 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/partners/</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -171,7 +171,7 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/tags/</loc>
+    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
