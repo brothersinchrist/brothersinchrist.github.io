@@ -59,9 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // -------------------------------------------------
 
   function applyTheme(theme) {
-    const effective = getEffectiveTheme(theme);
+    const effective =
+      theme === "system"
+        ? window.mogTheme.getEffectiveTheme()
+        : theme;
 
-    root.setAttribute("data-theme", effective);
+    document.documentElement.setAttribute("data-theme", effective);
     localStorage.setItem("theme", theme);
 
     setLabelAndIcon(theme);

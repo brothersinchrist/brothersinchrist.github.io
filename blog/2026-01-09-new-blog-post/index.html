@@ -4,6 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script>
+    (function () {
+      const systemQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+      function getStoredTheme() {
+        return localStorage.getItem("theme") || "system";
+      }
+
+      function getEffectiveTheme() {
+        const saved = getStoredTheme();
+        return saved === "system"
+          ? (systemQuery.matches ? "dark" : "light")
+          : saved;
+      }
+
+      // Expose globally (synchronous, safe)
+      window.mogTheme = {
+        getStoredTheme,
+        getEffectiveTheme
+      };
+
+      // Apply immediately to avoid flash
+      document.documentElement.setAttribute(
+        "data-theme",
+        getEffectiveTheme()
+      );
+    })();
+  </script>
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="/menofgod-site/css/main.css">
 
@@ -15,8 +44,6 @@
 
   <!-- Manifest -->
   <link rel="manifest" href="/menofgod-site/img/page/icons/site.webmanifest">
-
-  
 </head>
 
 <body class="mog-page">
@@ -383,43 +410,33 @@
 
 </div>
 
-  
-<div class="mog-container mog-comments">
-  <section id="comments">
-    <meta
-  name="giscus:backlink"
-  content="/menofgod-site/blog/2026-01-09-new-blog-post/"
->
+  <script>
+  (function () {
+    const themes = {
+      light: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_light.css",
+      dark: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_dark.css"
+    };
 
-    <script>
-      // Expose your custom theme URLs globally
-      window.giscusThemes = {
-        light: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_light.css",
-        dark: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_dark.css"
-      };
+    const effective = window.mogTheme.getEffectiveTheme();
 
-      // Default initial theme (will be overridden immediately by JS)
-      window.giscusThemeUrl = window.giscusThemes.light;
-    </script>
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.setAttribute("data-repo", "brothersinchrist/menofgod-site");
+    script.setAttribute("data-repo-id", "R_kgDOQzzv9A");
+    script.setAttribute("data-category", "Blog Comments");
+    script.setAttribute("data-category-id", "DIC_kwDOQzzv9M4C0vrd");
+    script.setAttribute("data-mapping", "pathname");
+    script.setAttribute("data-strict", "1");
+    script.setAttribute("data-reactions-enabled", "1");
+    script.setAttribute("data-input-position", "top");
+    script.setAttribute("data-theme", themes[effective]);
+    script.setAttribute("data-lang", "en");
+    script.setAttribute("crossorigin", "anonymous");
+    script.async = true;
 
-    <script
-      src="https://giscus.app/client.js"
-      data-repo="brothersinchrist/menofgod-site"
-      data-repo-id="R_kgDOQzzv9A"
-      data-category="Blog Comments"
-      data-category-id="DIC_kwDOQzzv9M4C0vrd"
-      data-mapping="pathname"
-      data-strict="1"
-      data-reactions-enabled="1"
-      data-input-position="top"
-      data-theme="light"
-      data-lang="en"
-      crossorigin="anonymous"
-      async
-    ></script>
-  </section>
-</div>
-
+    document.getElementById("comments").appendChild(script);
+  })();
+</script>
 
 
 

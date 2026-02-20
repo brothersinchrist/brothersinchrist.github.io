@@ -4,6 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script>
+    (function () {
+      const systemQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+      function getStoredTheme() {
+        return localStorage.getItem("theme") || "system";
+      }
+
+      function getEffectiveTheme() {
+        const saved = getStoredTheme();
+        return saved === "system"
+          ? (systemQuery.matches ? "dark" : "light")
+          : saved;
+      }
+
+      // Expose globally (synchronous, safe)
+      window.mogTheme = {
+        getStoredTheme,
+        getEffectiveTheme
+      };
+
+      // Apply immediately to avoid flash
+      document.documentElement.setAttribute(
+        "data-theme",
+        getEffectiveTheme()
+      );
+    })();
+  </script>
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="/menofgod-site/css/main.css">
 
@@ -15,8 +44,6 @@
 
   <!-- Manifest -->
   <link rel="manifest" href="/menofgod-site/img/page/icons/site.webmanifest">
-
-  
 </head>
 
 <body class="mog-page">
