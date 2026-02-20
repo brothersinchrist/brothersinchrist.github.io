@@ -40,37 +40,19 @@ document.addEventListener("DOMContentLoaded", () => {
   // Sync Giscus theme
   // -------------------------------------------------
 
-  // function updateGiscusTheme() {
-  //   try {
-  //     const iframe = document.querySelector("iframe.giscus-frame");
-  //     if (!iframe) return;
-  //     const current = root.getAttribute("data-theme");
-  //     const effective = getEffectiveTheme(current);
-  //     iframe.contentWindow.postMessage(
-  //     { giscus: { setConfig: { theme: effective } } },
-  //       "*"
-  //       );
-  //   } catch (e) {
-  //     // Don't break the rest of the script
-  //     console.error("Failed to update Giscus theme:", e);
-  //   }
-  // }
+  function updateGiscusTheme() {
+    const iframe = document.querySelector("iframe.giscus-frame");
+    if (!iframe) return;
 
-  // function syncGiscusWhenReady() {
-  //   const iframe = document.querySelector("iframe.giscus-frame");
-  //   if (iframe) {
-  //     updateGiscusTheme();
-  //     return;
-  //   }
-  //   const observer = new MutationObserver(() => {
-  //     const iframe = document.querySelector("iframe.giscus-frame");
-  //     if (iframe) {
-  //       updateGiscusTheme();
-  //      observer.disconnect();
-  //     }
-  //   });
-  //   observer.observe(document.body, { childList: true, subtree: true });
-  // }
+    const current = root.getAttribute("data-theme");
+    const effective = getEffectiveTheme(current);
+    const url = window.giscusThemes[effective];
+
+    iframe.contentWindow.postMessage(
+      { giscus: { setConfig: { theme: url } } },
+      "*"    // IMPORTANT: must be "*" per Giscus messaging behavior
+    );
+  }
 
   // -------------------------------------------------
   // Apply chosen theme
@@ -83,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", theme);
 
     setLabelAndIcon(theme);
-    // updateGiscusTheme();
+    updateGiscusTheme();
   }
 
   // -------------------------------------------------

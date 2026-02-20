@@ -382,6 +382,17 @@
   content="/menofgod-site/blog/2026-02-14-test-post/"
 >
 
+    <script>
+      // Expose your custom theme URLs globally
+      window.giscusThemes = {
+        light: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_light.css",
+        dark: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_dark.css"
+      };
+
+      // Default initial theme (will be overridden immediately by JS)
+      window.giscusThemeUrl = window.giscusThemes.light;
+    </script>
+
     <script
       src="https://giscus.app/client.js"
       data-repo="brothersinchrist/menofgod-site"
@@ -392,14 +403,13 @@
       data-strict="1"
       data-reactions-enabled="1"
       data-input-position="top"
-      data-theme="https://brothersinthrist.github.io/menofgod-site/css/preferred_color_scheme.css"
+      data-theme="light"
       data-lang="en"
       crossorigin="anonymous"
       async
     ></script>
   </section>
 </div>
-
 
 
 
