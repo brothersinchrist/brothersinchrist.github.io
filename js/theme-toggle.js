@@ -41,17 +41,34 @@ document.addEventListener("DOMContentLoaded", () => {
   // -------------------------------------------------
 
   function updateGiscusTheme() {
-    const iframe = document.querySelector("iframe.giscus-frame");
-    if (!iframe) return;
-
-    const current = root.getAttribute("data-theme");
-    const effective = getEffectiveTheme(current);
-
-    // Pass 'light' or 'dark' to Giscus
-    iframe.contentWindow.postMessage(
+    try {
+      const iframe = document.querySelector("iframe.giscus-frame");
+      if (!iframe) return;
+      const current = root.getAttribute("data-theme");
+      const effective = getEffectiveTheme(current);
+      iframe.contentWindow.postMessage(
       { giscus: { setConfig: { theme: effective } } },
-      "https://giscus.app"
-    );
+        "https://giscus.app"
+        );
+    } catch (e) {
+      // Don't break the rest of the script
+    }
+  }
+
+  function syncGiscusWhenReady() {
+    const iframe = document.querySelector("iframe.giscus-frame");
+    if (iframe) {
+      updateGiscusTheme();
+      return;
+    }
+    const observer = new MutationObserver(() => {
+      const iframe = document.querySelector("iframe.giscus-frame");
+      if (iframe) {
+        updateGiscusTheme();
+       observer.disconnect();
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
   }
 
   // -------------------------------------------------
