@@ -48,7 +48,7 @@
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/menofgod-site/sitemap.xml">
 
   <!-- Page title -->
-  <title>Partners | Men of God</title>
+  <title>Men of God | Men of God</title>
 
   <!-- Manifest -->
   <link rel="manifest" href="/menofgod-site/img/page/icons/site.webmanifest">
@@ -146,198 +146,81 @@
   
 
     
-      
-        
+
+  
 
 
-<section class="mog-hero" role="banner">
-  <!-- Background -->
-  <div class="mog-hero-background" style="--hero-image: url('/menofgod-site/img/page/images/hero-bg.jpg')"></div>
+  
+  
+  
 
-  <!-- Content -->
-  <div class="mog-hero-inner">
-    <div class="mog-container">
 
-      
-      
-        <h1 class="mog-hero-title">Partner Organizations</h1>
-      
+<div class="product-page">
 
-      
-      
-        <p class="mog-hero-tagline">These are the ministries, networks, and organizations we stand alongside.</p>
-      
+  <!-- Title -->
+  <h1 class="product-title">Man of God - Iron Sharpens Iron - Green</h1>
 
-      
-      
-
-      
-      
-
-      
-      
-
-    </div>
+  <!-- Main Image -->
+  <div class="product-image">
+    <img id="product-image" src="" alt="Man of God - Iron Sharpens Iron - Green">
   </div>
-</section>
+
+  <!-- Variant Selectors -->
+  <div class="product-options">
+
+    <!-- Color -->
+    <label for="color">Color</label>
+    <select id="color">
       
-    
-
-  
-
-
-  
-  
-
-<section class="mog-section mog-section-partners">  
-  <div class="mog-container">
-
+        <option value="Military Green">Military Green</option>
       
-  
-      
-  
-      <div class="mog-partners-grid">  
-  
-        
+    </select>
 
-          
+    <!-- Size -->
+    <label for="size">Size</label>
+    <select id="size"></select>
 
-          <article class="mog-card mog-partner-card">
-
-  
-    <div class="mog-partner-logo">
-      <img
-        src="/menofgod-site/img/uploads/images/partners/CaringSolutions 2016.png"
-        alt="Caring Solutions"
-        loading="lazy"
-      >
-    </div>
-  
-
-  <div class="mog-partner-body">
-
-    <h3 class="mog-partner-title">
-      Caring Solutions
-    </h3>
-
-    
-      <p class="mog-partner-summary">
-        Hope Offered. Futures Changed.
-      </p>
-    
-
-    
-      <a
-        href="https://www.friendsofcaringsolutions.com/"
-        class="mog-btn mog-btn-secondary"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Visit Website
-      </a>
-    
+    <!-- Price -->
+    <p class="product-price">
+      $<span id="price"></span>
+    </p>
 
   </div>
 
-</article>
+  <!-- Checkout Form -->
+  <form id="checkout-form"
+        action="https://stripe-checkout-worker.menofgod-worker.workers.dev"
+        method="POST"
+        class="product-form">
 
+    <input type="hidden" name="product_id" value="420839425">
+    <input type="hidden" name="price_id" id="stripe_price_id">
+    <input type="hidden" name="printful_variant_id" id="printful_variant_id">
+    <input type="hidden" name="product_title" value="Man of God - Iron Sharpens Iron - Green">
 
-        
+    <button type="submit" class="btn-primary">
+      Buy Now
+    </button>
+  </form>
 
-          
+</div>
 
-          <article class="mog-card mog-partner-card">
+<script>
+  window.MOG_PRODUCT = {"id":420839425,"name":"Man of God - Iron Sharpens Iron - Green","thumbnail":null,"variants_by_color":{"Military Green":[{"id":5207055144,"variant_id":15867,"size":"S","color":"Military Green","price":"15.50","availability":"active","image":"https://files.cdn.printful.com/files/9a9/9a98cc01dfe4dc3efca30a11fde4b3e5_preview.png","sku":"699B5CFF6A314_S","stripe_price_id":"price_1T3ibkCl9fZRmVjAKLXDld0D","stripe_product_id":"prod_U1mA34rLBM7uqT"},{"id":5207055145,"variant_id":15868,"size":"M","color":"Military Green","price":"15.50","availability":"active","image":"https://files.cdn.printful.com/files/9a9/9a98cc01dfe4dc3efca30a11fde4b3e5_preview.png","sku":"699B5CFF6A314_M","stripe_price_id":"price_1T3ibkCl9fZRmVjAGkQnlmAB","stripe_product_id":"prod_U1mA34rLBM7uqT"},{"id":5207055146,"variant_id":15869,"size":"L","color":"Military Green","price":"15.50","availability":"active","image":"https://files.cdn.printful.com/files/9a9/9a98cc01dfe4dc3efca30a11fde4b3e5_preview.png","sku":"699B5CFF6A314_L","stripe_price_id":"price_1T3ibkCl9fZRmVjA9mZC7M55","stripe_product_id":"prod_U1mA34rLBM7uqT"},{"id":5207055147,"variant_id":15870,"size":"XL","color":"Military Green","price":"15.50","availability":"active","image":"https://files.cdn.printful.com/files/9a9/9a98cc01dfe4dc3efca30a11fde4b3e5_preview.png","sku":"699B5CFF6A314_XL","stripe_price_id":"price_1T3iblCl9fZRmVjAEVGpoHNS","stripe_product_id":"prod_U1mA34rLBM7uqT"},{"id":5207055148,"variant_id":15871,"size":"2XL","color":"Military Green","price":"18.00","availability":"active","image":"https://files.cdn.printful.com/files/9a9/9a98cc01dfe4dc3efca30a11fde4b3e5_preview.png","sku":"699B5CFF6A314_2XL","stripe_price_id":"price_1T3iblCl9fZRmVjADKbVFQ7l","stripe_product_id":"prod_U1mA34rLBM7uqT"}]}};
+</script>
 
-  
-    <div class="mog-partner-logo">
-      <img
-        src="/menofgod-site/img/uploads/images/partners/sp-white-logo.png"
-        alt="Samaritan&#39;s Purse"
-        loading="lazy"
-      >
-    </div>
-  
+<script>
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("canceled") === "true") {
+    const banner = document.createElement("div");
+    banner.className = "checkout-canceled-banner";
+    banner.textContent = "Checkout canceled. You can continue shopping.";
+    document.body.prepend(banner);
+  }
+</script>
 
-  <div class="mog-partner-body">
+<script src="/menofgod-site/js/product-page.js"></script>
 
-    <h3 class="mog-partner-title">
-      Samaritan&#39;s Purse
-    </h3>
-
-    
-      <p class="mog-partner-summary">
-        Samaritan&#39;s Purse brings physical relief and the hope of the Gospel to hurting people around the world.
-      </p>
-    
-
-    
-      <a
-        href="https://www.samaritanspurse.org/"
-        class="mog-btn mog-btn-secondary"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Visit Website
-      </a>
-    
-
-  </div>
-
-</article>
-
-
-        
-
-          
-
-          <article class="mog-card mog-partner-card">
-
-  
-    <div class="mog-partner-logo">
-      <img
-        src="/menofgod-site/img/uploads/images/partners/shield-en.svg"
-        alt="The Salvation Army - Warner Robins Corp"
-        loading="lazy"
-      >
-    </div>
-  
-
-  <div class="mog-partner-body">
-
-    <h3 class="mog-partner-title">
-      The Salvation Army - Warner Robins Corp
-    </h3>
-
-    
-      <p class="mog-partner-summary">
-        Wherever there is a need in warner robins, georgia you&#39;ll find The Salvation Army. Find out how you can help.
-      </p>
-    
-
-    
-      <a
-        href="https://southernusa.salvationarmy.org/warner-robins/"
-        class="mog-btn mog-btn-secondary"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Visit Website
-      </a>
-    
-
-  </div>
-
-</article>
-
-
-        
-  
-      </div>
-  
-      
-  
-  </div>  
-</section>
 
 
 
