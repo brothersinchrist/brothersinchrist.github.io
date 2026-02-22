@@ -94,15 +94,15 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-07-first-episode/</loc>
-    <lastmod>2026-01-07</lastmod>
+    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-14-this-is-a-test-post-copy/</loc>
+    <lastmod>2026-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-14-this-is-a-test-post-copy/</loc>
-    <lastmod>2026-02-11</lastmod>
+    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-16-hard-men-podcast/</loc>
+    <lastmod>2025-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -115,8 +115,15 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-16-hard-men-podcast/</loc>
-    <lastmod>2025-07-09</lastmod>
+    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-07-first-episode/</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/the-shop/success/</loc>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -136,21 +143,7 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/the-shop/success/</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/pages/about/</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/blog/</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -171,6 +164,13 @@
   </url>
 
   <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/partners/</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/the-shop/</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -178,7 +178,7 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/partners/</loc>
+    <loc>https://brothersinchrist.github.io/menofgod-site/blog/</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
