@@ -48,7 +48,7 @@
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/menofgod-site/sitemap.xml">
 
   <!-- Page title -->
-  <title>Men of God | Men of God</title>
+  <title>Test | Men of God</title>
 
   <!-- Manifest -->
   <link rel="manifest" href="/menofgod-site/img/page/icons/site.webmanifest">
@@ -109,7 +109,7 @@
 
     <!-- Navigation -->
     <nav class="mog-nav" id="mogNav">
-        <a href="/menofgod-site/test/">
+        <a href="/menofgod-site/test/" aria-current="page">
           test
         </a>
         <a href="/menofgod-site/">
@@ -149,95 +149,142 @@
   
 
     
-
-  
-
-
-  
-  
-  
-
-
-<div class="product-page">
-
-  <!-- Title -->
-  <h1 class="product-title">Man of God - Iron Sharpens Iron - Green</h1>
-
-  <!-- Main Image -->
-  <div class="product-image">
-    <img
-      id="product-image"
-      src="https://files.cdn.printful.com/files/9a9/9a98cc01dfe4dc3efca30a11fde4b3e5_preview.png"
-      alt="Man of God - Iron Sharpens Iron - Green"
-    >
-  </div>
-
-  <!-- Variant Selectors -->
-  <div class="product-options">
-
-    <!-- Color -->
-    <label for="color">Color</label>
-    <select id="color">
       
-        <option value="Military Green">Military Green</option>
+        
+
+
+<section class="mog-hero" role="banner">
+  <!-- Background -->
+  <div class="mog-hero-background" style="--hero-image: url('/menofgod-site/img/page/images/hero-bg.jpg')"></div>
+
+  <!-- Content -->
+  <div class="mog-hero-inner">
+    <div class="mog-container">
+
       
-    </select>
+      
+        <h1 class="mog-hero-title">This is the Title</h1>
+      
 
-    <!-- Size -->
-    <label for="size">Size</label>
-    <select id="size"></select>
+      
+      
+        <p class="mog-hero-tagline">This is a Subtitle</p>
+      
 
-    <!-- Price -->
-    <p class="product-price">
-      $<span id="price"></span>
-    </p>
+      
+      
+        <div class="mog-hero-cta">
+          
+            
+              <a href="#" class="mog-btn mog-btn-primary">
+                This is a Primary Button
+              </a>
+            
+          
+            
+              <a href="#" class="mog-btn mog-btn-secondary">
+                This is a Secondary Button
+              </a>
+            
+          
+        </div>
+      
+
+      
+      
+        <div class="mog-hero-overlay">
+          <p>This is an overlay</p>
+        </div>
+      
+
+      
+      
+        <div class="mog-hero-scripture">
+          <p>This is a scripture text</p>
+          
+            <span>This is a scripture reference</span>
+          
+        </div>
+      
+
+    </div>
+  </div>
+</section>
+      
+        
+
+<section class="mog-section mog-mission-section">
+  <div class="mog-container">
+
+    
+      <p class="mog-mission-tagline">
+        This is the Tagline of a Mission Section
+      </p>
+    
+
+    
+      <div class="mog-mission-body">
+        <p>This is the mission section’s content.</p>
+
+      </div>
+    
+
+    
+      <div class="mog-mission-scripture">
+        <p>This is a scripture text area in the mission block.</p>
+
+        
+          <p class="mog-mission-reference">
+            The is the scripture reference of the mission block.
+          </p>
+        
+      </div>
+    
 
   </div>
+</section>
 
-  <!-- Checkout Form -->
-  <form
-    id="checkout-form"
-    action="https://stripe-checkout-worker.menofgod-worker.workers.dev"
-    method="POST"
-    class="product-form"
-  >
-
-    <!-- Explicit type for worker routing -->
-    <input type="hidden" name="type" value="store">
-
-    <input type="hidden" name="product_id" value="420839425">
-    <input type="hidden" name="price_id" id="stripe_price_id">
-    <input type="hidden" name="printful_variant_id" id="printful_variant_id">
-    <input type="hidden" name="product_title" value="Man of God - Iron Sharpens Iron - Green">
-
-    <button type="submit" class="btn-primary">
-      Buy Now
-    </button>
-
-  </form>
-
-</div>
-
-<script>
-  window.MOG_PRODUCT = {"id":420839425,"name":"Man of God - Iron Sharpens Iron - Green","thumbnail":"https://files.cdn.printful.com/files/9a9/9a98cc01dfe4dc3efca30a11fde4b3e5_preview.png","variants_by_color":{"Military Green":[{"id":5207055144,"variant_id":15867,"size":"S","color":"Military Green","price":"15.50","availability":"active","image":"https://files.cdn.printful.com/files/9a9/9a98cc01dfe4dc3efca30a11fde4b3e5_preview.png","sku":"699B5CFF6A314_S","stripe_price_id":"price_1T3ibkCl9fZRmVjAKLXDld0D","stripe_product_id":"prod_U1mA34rLBM7uqT"},{"id":5207055145,"variant_id":15868,"size":"M","color":"Military Green","price":"15.50","availability":"active","image":"https://files.cdn.printful.com/files/9a9/9a98cc01dfe4dc3efca30a11fde4b3e5_preview.png","sku":"699B5CFF6A314_M","stripe_price_id":"price_1T3ibkCl9fZRmVjAGkQnlmAB","stripe_product_id":"prod_U1mA34rLBM7uqT"},{"id":5207055146,"variant_id":15869,"size":"L","color":"Military Green","price":"15.50","availability":"active","image":"https://files.cdn.printful.com/files/9a9/9a98cc01dfe4dc3efca30a11fde4b3e5_preview.png","sku":"699B5CFF6A314_L","stripe_price_id":"price_1T3ibkCl9fZRmVjA9mZC7M55","stripe_product_id":"prod_U1mA34rLBM7uqT"},{"id":5207055147,"variant_id":15870,"size":"XL","color":"Military Green","price":"15.50","availability":"active","image":"https://files.cdn.printful.com/files/9a9/9a98cc01dfe4dc3efca30a11fde4b3e5_preview.png","sku":"699B5CFF6A314_XL","stripe_price_id":"price_1T3iblCl9fZRmVjAEVGpoHNS","stripe_product_id":"prod_U1mA34rLBM7uqT"},{"id":5207055148,"variant_id":15871,"size":"2XL","color":"Military Green","price":"18.00","availability":"active","image":"https://files.cdn.printful.com/files/9a9/9a98cc01dfe4dc3efca30a11fde4b3e5_preview.png","sku":"699B5CFF6A314_2XL","stripe_price_id":"price_1T3iblCl9fZRmVjADKbVFQ7l","stripe_product_id":"prod_U1mA34rLBM7uqT"}]}};
-</script>
-
-<script>
-  const params = new URLSearchParams(window.location.search);
-
-  if (params.get("canceled") === "true") {
-    const banner = document.createElement("div");
-    banner.className = "checkout-canceled-banner";
-    banner.textContent = "Checkout canceled. You can continue shopping.";
-    document.body.prepend(banner);
-  }
-</script>
-
-<script src="/menofgod-site/js/product-page.js"></script>
+      
+        
 
 
 
 
+
+
+
+
+
+  
+
+
+<section class="mog-section">
+  <div class="mog-container text-center">
+
+    
+      <p class="mog-card-text">
+        This is a Call To Action (CTA) Section
+      </p>
+    
+
+    
+      <a href="#" class="mog-btn mog-btn-primary">
+        Primary CTA Button
+      </a>
+    
+
+  </div>
+</section>
+      
+    
+
+  
+
+
+  
+  
+    
+  
 
 
   
@@ -266,7 +313,7 @@
 
     <div class="mog-footer-middle">
       <nav class="mog-footer-nav" aria-label="Footer navigation">
-            <a href="/menofgod-site/test/">
+            <a href="/menofgod-site/test/" aria-current="page">
               test
             </a>
             <a href="/menofgod-site/">
