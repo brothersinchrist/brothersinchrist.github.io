@@ -59,13 +59,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // -------------------------------------------------
 
   function applyTheme(theme) {
+    localStorage.setItem("theme", theme);
+
     const effective =
       theme === "system"
-        ? window.mogTheme.getEffectiveTheme()
+        ? (systemQuery.matches ? "dark" : "light")
         : theme;
 
     document.documentElement.setAttribute("data-theme", effective);
-    localStorage.setItem("theme", theme);
 
     setLabelAndIcon(theme);
     updateGiscusTheme();
