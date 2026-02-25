@@ -1,299 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Episodes | Men of God</title>
 
-  <meta property="og:title" content="Episodes">
-  <meta property="og:site_name" content="Men of God">
-  <meta property="og:description" content="Discover faith-driven podcast episodes designed to strengthen Christian men in leadership, family life, spiritual growth, and biblical conviction.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://brothersinchrist.github.io/menofgod-site/episodes/">
-  <meta property="og:image" content="https://brothersinchrist.github.io/menofgod-site/img/page/images/hero-bg.jpg">
+  <!-- Styles -->
+  <link rel="stylesheet" href="/menofgod-site/css/style.css">
+  <link rel="stylesheet" href="/menofgod-site/css/cards.css">
+  <link rel="stylesheet" href="/menofgod-site/css/episodes.css">
+  <link rel="stylesheet" href="/menofgod-site/css/blog.css">
+<link rel="stylesheet" href="/menofgod-site/css/contact.css">
   
-  <meta name="description" content="Discover faith-driven podcast episodes designed to strengthen Christian men in leadership, family life, spiritual growth, and biblical conviction.">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Episodes">
-  <meta name="twitter:description" content="Discover faith-driven podcast episodes designed to strengthen Christian men in leadership, family life, spiritual growth, and biblical conviction.">
-
-  
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://brothersinchrist.github.io/menofgod-site/sitemap.xml">
-  <link rel="canonical" href="https://brothersinchrist.github.io/menofgod-site/episodes/">
-
-  <script>
-    (function () {
-      const systemQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-      const giscusThemes = {
-        light: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_light.css",
-        dark: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_dark.css"
-      };
-
-      function getStoredTheme() {
-        return localStorage.getItem("theme") || "system";
-      }
-
-      function getEffectiveTheme() {
-        const saved = getStoredTheme();
-        return saved === "system"
-          ? (systemQuery.matches ? "dark" : "light")
-          : saved;
-      }
-
-      function getGiscusThemeUrl() {
-        return giscusThemes[getEffectiveTheme()];
-      }
-
-      window.mogTheme = {
-        getStoredTheme,
-        getEffectiveTheme,
-        getGiscusThemeUrl
-      };
-
-      document.documentElement.setAttribute(
-        "data-theme",
-        getEffectiveTheme()
-      );
-    })();
-  </script>
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="/menofgod-site/css/main.css">
-  <!-- Manifest -->
-  <link rel="manifest" href="/menofgod-site/img/page/icons/site.webmanifest">
+  <!-- Favicon -->
+  <link rel="icon" href="/menofgod-site/assets/page/icons/favicon.svg">
+  <link rel="icon" href="/menofgod-site/assets/page/icons/favicon-16.png" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/menofgod-site/assets/page/icons/favicon-32.png">
+  <link rel="shortcut icon" href="/menofgod-site/favicon.ico">
 </head>
+<body>
+  <header class="site-header">
+  <div class="nav-container">
+    <div class="logo">Men of God</div>
 
-<body class="mog-page">
-
-  <!-- ============================
-       HEADER
-  ============================ -->
-  <header class="mog-header">
-  <div class="mog-header-inner">
-
-    <!-- Mobile nav toggle (LEFT) -->
-    <button
-      class="mog-nav-toggle"
-      id="mogNavToggle"
-      aria-label="Toggle navigation"
-      aria-expanded="false"
-      aria-controls="mogNav"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
+    <!-- Hamburger button -->
+    <button id="menu-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </button>
 
-    <!-- Logo (CENTER-ish) -->
-    <a href="/menofgod-site/" class="site-logo">
-      <span class="mog-logo-text">Men of God</span>
-    </a>
-
-    <!-- Theme toggle (RIGHT) -->
-    <div class="mog-header-right">
-      <div class="mog-theme-dropdown">
-        <button class="mog-theme-toggle-btn" id="themeToggleBtn">
-          <img id="themeIcon" src="/menofgod-site/img/page/icons/gear.svg" alt="">
-          <span id="themeLabel">System</span>
-        </button>
-
-        <ul class="mog-theme-menu" id="themeMenu">
-          <li data-theme="light">
-            <img src="/menofgod-site/img/page/icons/sun.svg" alt="">
-            Light theme
-          </li>
-
-          <li data-theme="dark">
-            <img src="/menofgod-site/img/page/icons/moon.svg" alt="">
-            Dark theme
-          </li>
-
-          <li data-theme="system">
-            <img src="/menofgod-site/img/page/icons/gear.svg" alt="">
-            Device theme
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="mog-nav" id="mogNav">
-        <a href="/menofgod-site/">
-          home
-        </a>
-        <a href="/menofgod-site/about/">
-          about
-        </a>
-        <a href="/menofgod-site/blog/">
-          blog
-        </a>
-        <a href="/menofgod-site/episodes/" aria-current="page">
-          episodes
-        </a>
-        <a href="/menofgod-site/the-shop/">
-          the-shop
-        </a>
-        <a href="/menofgod-site/contact/">
-          contact
-        </a>
-  </nav>
-
+    <nav id="nav-links" class="nav-menu">
+      <a href="/menofgod-site/">Home</a>
+      <a href="/menofgod-site/about/">About</a>
+      <a href="/menofgod-site/episodes/">Episodes</a>
+      <a href="/menofgod-site/blog/">Blog</a>
+      <a href="/menofgod-site/contact/">Contact</a>
+    </nav>
   </div>
 </header>
 
+  <script src="/menofgod-site/js/contact-token.js"></script>
+  
+  <!-- Main content -->
+  <main>
+    <section class="hero">
+  <h1>Episodes</h1>
+  <p class="hero-statement" id="rotating-text">
+    Honest conversations for men striving to grow as leaders under God.
+  </p>
+  <p class="tagline">
+    Practical wisdom, faith, and leadership advice for Christian men striving to grow under God.
+  </p>
+</section>
 
-  <!-- ============================
-       MAIN CONTENT
-  ============================ -->
-  <main class="mog-main">
+<section class="section episodes-grid">
+  <h2>Latest Episodes</h2>
 
   
-  
-
 
   
-  
-
     
-      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <article class="card episode-card">
+
+        <h3>Why Most Christians Get Discipleship Wrong</h3>
+        <p class="date">January 08, 2026</p>
+        <p>Why Most Christians Get Discipleship Wrong: It Starts Here | Pastor Josh Howerton</p>
+
+        
+          <div class="video-container">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/FxQYhwdVJdo" title="Why Most Christians Get Discipleship Wrong" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+            </iframe>
+          </div>
         
 
-
-<section class="mog-hero" role="banner">
-  <!-- Background -->
-  <div class="mog-hero-background" style="--hero-image: url('/menofgod-site/img/page/images/hero-bg.jpg')"></div>
-
-  <!-- Content -->
-  <div class="mog-hero-inner">
-    <div class="mog-container">
-
-      
-      
-        <h1 class="mog-hero-title">Watch or Listen</h1>
-      
-
-      
-      
-        <p class="mog-hero-tagline">Forging men of courage, conviction, and strength in Christ.</p>
-      
-
-      
-      
-
-      
-      
-
-      
-      
-        <div class="mog-hero-scripture">
-          <p>Be watchful, stand firm in the faith, act like men, be strong.</p>
-          
-            <span>1 Corinthians 16:13</span>
-          
-        </div>
-      
-
-    </div>
-  </div>
-</section>
-      
+        <p><a href="/menofgod-site/2026/01/08/why-most-christians-get-discipleship-wrong.html">Read / Watch →</a></p>
+      </article>
     
-
+  
+    
+  
+    
+  
+    
   
 
-
   
-   
+</section>
 
-<section class="mog-section"> 
-    <div class="mog-container"> 
-         
-         
-            <!-- Empty State Section --> 
-            <div class="mog-episodes-empty">
-                <svg class="mog-episodes-empty-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
-                </svg>
-                <p class="mog-episodes-empty-text">No episodes yet. Check back soon!</p>
-            </div>
-         
-    </div> 
-</section> 
+  </main>
 
-
-
-  
-  
-
-</main>
-
-  <!-- ============================
-       FOOTER
-  ============================ -->
-  <footer class="mog-footer">
-  <div class="mog-footer-inner">
-
-    <div class="mog-footer-left">
-      <h3 class="mog-footer-title">MEN OF GOD</h3>
-      <p class="mog-footer-tagline">
-        Equipping men in Christ to lead with courage and conviction.
-      </p>
-
-      
-        <a href="/menofgod-site/donate/" class="mog-footer-donate-btn">
-          Support the Mission
-        </a>
-      
-    </div>
-
-    <div class="mog-footer-middle">
-      <nav class="mog-footer-nav" aria-label="Footer navigation">
-            <a href="/menofgod-site/">
-              home
-            </a>
-            <a href="/menofgod-site/about/">
-              about
-            </a>
-            <a href="/menofgod-site/blog/">
-              blog
-            </a>
-            <a href="/menofgod-site/episodes/" aria-current="page">
-              episodes
-            </a>
-            <a href="/menofgod-site/the-shop/">
-              the-shop
-            </a>
-            <a href="/menofgod-site/contact/">
-              contact
-            </a>
-      </nav>
-    </div>
-
-    <div class="mog-footer-right">
-      <p class="mog-footer-scripture">
-        <i>"Be watchful, stand firm in the faith, act like men, be strong."</i>
-        <span class="mog-footer-scripture-ref">— 1 Corinthians 16:13</span>
-      </p>
-    </div>
-
-  </div> <!-- /.mog-footer-inner -->
-
-  <div class="mog-footer-bottom">
-    <p>&copy; Men of God 2026</p>
-  </div>
+  <footer>
+  <p>
+    &copy; <span id="year"></span> Men of God. All rights reserved.
+  </p>
+  <p>
+    Strong families build strong communities and a strong nation.
+  </p>
 </footer>
 
+<script>
+  // Auto-update year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-  <!-- Icon base path for theme toggle -->
-  <script>
-    window.mogIconBase = "/menofgod-site/img/page/icons/";
-  </script>
-
-  <!-- Global JS -->
+  <!-- Scripts -->
   <script src="/menofgod-site/js/main.js"></script>
-  <script src="/menofgod-site/js/theme-toggle.js"></script>
-
 </body>
 </html>
+
+

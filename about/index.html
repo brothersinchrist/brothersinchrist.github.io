@@ -1,755 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Men of God | Men of God</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/menofgod-site/css/style.css">
+  <link rel="stylesheet" href="/menofgod-site/css/cards.css">
+  <link rel="stylesheet" href="/menofgod-site/css/episodes.css">
+  <link rel="stylesheet" href="/menofgod-site/css/blog.css">
+<link rel="stylesheet" href="/menofgod-site/css/contact.css">
   
-  <title>About | Men of God</title>
-
-  <meta property="og:title" content="About">
-  <meta property="og:site_name" content="Men of God">
-  <meta property="og:description" content="This is the about page for the Men of God site. It descibes the Men of God origin story, the mission, the hosts, and has a section for partner organizations.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://brothersinchrist.github.io/menofgod-site/about/">
-  <meta property="og:image" content="https://brothersinchrist.github.io/menofgod-site/img/page/images/hero-bg.jpg">
-  
-  <meta name="description" content="This is the about page for the Men of God site. It descibes the Men of God origin story, the mission, the hosts, and has a section for partner organizations.">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About">
-  <meta name="twitter:description" content="This is the about page for the Men of God site. It descibes the Men of God origin story, the mission, the hosts, and has a section for partner organizations.">
-
-  
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://brothersinchrist.github.io/menofgod-site/sitemap.xml">
-  <link rel="canonical" href="https://brothersinchrist.github.io/menofgod-site/about/">
-
-  <script>
-    (function () {
-      const systemQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-      const giscusThemes = {
-        light: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_light.css",
-        dark: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_dark.css"
-      };
-
-      function getStoredTheme() {
-        return localStorage.getItem("theme") || "system";
-      }
-
-      function getEffectiveTheme() {
-        const saved = getStoredTheme();
-        return saved === "system"
-          ? (systemQuery.matches ? "dark" : "light")
-          : saved;
-      }
-
-      function getGiscusThemeUrl() {
-        return giscusThemes[getEffectiveTheme()];
-      }
-
-      window.mogTheme = {
-        getStoredTheme,
-        getEffectiveTheme,
-        getGiscusThemeUrl
-      };
-
-      document.documentElement.setAttribute(
-        "data-theme",
-        getEffectiveTheme()
-      );
-    })();
-  </script>
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="/menofgod-site/css/main.css">
-  <!-- Manifest -->
-  <link rel="manifest" href="/menofgod-site/img/page/icons/site.webmanifest">
+  <!-- Favicon -->
+  <link rel="icon" href="/menofgod-site/assets/page/icons/favicon.svg">
+  <link rel="icon" href="/menofgod-site/assets/page/icons/favicon-16.png" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/menofgod-site/assets/page/icons/favicon-32.png">
+  <link rel="shortcut icon" href="/menofgod-site/favicon.ico">
 </head>
+<body>
+  <header class="site-header">
+  <div class="nav-container">
+    <div class="logo">Men of God</div>
 
-<body class="mog-page">
-
-  <!-- ============================
-       HEADER
-  ============================ -->
-  <header class="mog-header">
-  <div class="mog-header-inner">
-
-    <!-- Mobile nav toggle (LEFT) -->
-    <button
-      class="mog-nav-toggle"
-      id="mogNavToggle"
-      aria-label="Toggle navigation"
-      aria-expanded="false"
-      aria-controls="mogNav"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
+    <!-- Hamburger button -->
+    <button id="menu-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </button>
 
-    <!-- Logo (CENTER-ish) -->
-    <a href="/menofgod-site/" class="site-logo">
-      <span class="mog-logo-text">Men of God</span>
-    </a>
-
-    <!-- Theme toggle (RIGHT) -->
-    <div class="mog-header-right">
-      <div class="mog-theme-dropdown">
-        <button class="mog-theme-toggle-btn" id="themeToggleBtn">
-          <img id="themeIcon" src="/menofgod-site/img/page/icons/gear.svg" alt="">
-          <span id="themeLabel">System</span>
-        </button>
-
-        <ul class="mog-theme-menu" id="themeMenu">
-          <li data-theme="light">
-            <img src="/menofgod-site/img/page/icons/sun.svg" alt="">
-            Light theme
-          </li>
-
-          <li data-theme="dark">
-            <img src="/menofgod-site/img/page/icons/moon.svg" alt="">
-            Dark theme
-          </li>
-
-          <li data-theme="system">
-            <img src="/menofgod-site/img/page/icons/gear.svg" alt="">
-            Device theme
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="mog-nav" id="mogNav">
-        <a href="/menofgod-site/">
-          home
-        </a>
-        <a href="/menofgod-site/about/" aria-current="page">
-          about
-        </a>
-        <a href="/menofgod-site/blog/">
-          blog
-        </a>
-        <a href="/menofgod-site/episodes/">
-          episodes
-        </a>
-        <a href="/menofgod-site/the-shop/">
-          the-shop
-        </a>
-        <a href="/menofgod-site/contact/">
-          contact
-        </a>
-  </nav>
-
+    <nav id="nav-links" class="nav-menu">
+      <a href="/menofgod-site/">Home</a>
+      <a href="/menofgod-site/about/">About</a>
+      <a href="/menofgod-site/episodes/">Episodes</a>
+      <a href="/menofgod-site/blog/">Blog</a>
+      <a href="/menofgod-site/contact/">Contact</a>
+    </nav>
   </div>
 </header>
 
-
-  <!-- ============================
-       MAIN CONTENT
-  ============================ -->
-  <main class="mog-main">
-
+  <script src="/menofgod-site/js/contact-token.js"></script>
   
-  
-
-
-  
-  
-
-
-  
-  
-
-
-
-
-
-  
-    
-  
-
-  
-
-  
-
-
-
-
-
-
-
-  
-    
-
-
-<section class="mog-hero" role="banner">
-  <!-- Background -->
-  <div class="mog-hero-background" style="--hero-image: url('/menofgod-site/img/page/images/hero-bg.jpg')"></div>
-
-  <!-- Content -->
-  <div class="mog-hero-inner">
-    <div class="mog-container">
-
-      
-      
-        <h1 class="mog-hero-title">About Us</h1>
-      
-
-      
-      
-        <p class="mog-hero-tagline">Forging men of courage, conviction, and strength in Christ.</p>
-      
-
-      
-      
-
-      
-      
-        <div class="mog-hero-overlay">
-          <p>We believe strong families build strong communities...</p>
-        </div>
-      
-
-      
-      
-        <div class="mog-hero-scripture">
-          <p>As iron sharpens iron, so one man sharpens another.</p>
-          
-            <span>Proverbs 27:17</span>
-          
-        </div>
-      
-
-    </div>
-  </div>
+  <!-- Main content -->
+  <main>
+    <section class="hero">
+  <h1>About The Hosts</h1>
+  <p class="hero-statement" id="rotating-text">
+    Honest conversations to inspire men to lead their families and communities.
+  </p>
 </section>
-    
-  
 
-  
-    
+<section class="section">
+  <h2>About the hosts</h2>
 
+  <div class="host-grid">
+    <div class="host-card card">
+      <img src="/menofgod-site/assets/page/images/hosts/host1.jpg" />
+      <h3>DeShun</h3>
+      <p>A devoted husband and father of five, raising four sons and a daughter. He and his family are active in their church, and his faith guides how he leads at home and serves his community. Grounded in God’s truth, he seeks to live with integrity, humility, and purpose, modeling what it means to lead a family under God.</p>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-<section class="mog-section mog-section--tight mog-section--alt">
-  <div class="mog-container">
-    <div class="mog-content-wide mog-text-left">
-
-      
-        <h2><p style="text-align: center">Our Mission</p></h2>
-      
-
-      
-        <p>Men of God exists to equip men to lead with courage, conviction, and Christ at the center. We believe men are called to stand firm, build strong families, and serve their communities with humility and strength.</p>
-<p>Our ministry is built on a simple truth:</p>
-<p><strong>God uses ordinary men — from every background — to do extraordinary things.</strong></p>
-
-      
-
+    <div class="host-card card">
+      <img src="/menofgod-site/assets/page/images/hosts/host2.jpg" />
+      <h3>Tom</h3>
+      <p>A husband and father of five, raising three sons and two daughters. Renewed in his Christian faith, he strives to lead with honesty, humility, and intention. Through his daily choices, he works to set an example for his family and encourage other men to grow as leaders under God.</p>
     </div>
   </div>
 </section>
 
-    
-      
-
-
-
-
-<div class="mog-separator mog-separator--sm">
-
-  
-    <div class="mog-container">
-      <hr>
-    </div>
-  
-
-</div>
-
-
-    
-  
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-<section class="mog-section mog-section--tight mog-section--alt">
-  <div class="mog-container">
-    <div class="mog-content-wide mog-text-left">
-
-      
-        <h2><p style="text-align: center">Our Story</p></h2>
-      
-
-      
-        <p>We’re two men from two different worlds — different careers, different upbringings — yet God brought our families together and made us brothers. One of us spent 24 years traveling the world in the United States Air Force. The other has lived his entire life in Georgia, working hard, raising a family, and serving faithfully in his church.</p>
-<ul>
-<li>
-<p>Our families are united.</p>
-</li>
-<li>
-<p>Our values are united.</p>
-</li>
-<li>
-<p>Our mission is united.</p>
-</li>
-</ul>
-<p>We’re here to encourage men to lead boldly, love deeply, and walk in the strength God provides.</p>
-
-      
-
-    </div>
-  </div>
-</section>
-
-    
-      
-
-
-
-
-<div class="mog-separator mog-separator--sm">
-
-  
-    <div class="mog-container">
-      <hr>
-    </div>
-  
-
-</div>
-
-
-    
-  
-
-
-
-
-
-
-
-
-
-
-<section class="mog-section mog-section-hosts">
-
-  <div class="mog-container">
-
-    
-      <h2 class="mog-section-title">Our Hosts</h2>
-    
-
-    <div class="mog-grid mog-grid--cards">
-      
-        
-        
-        
-
-
-
-<article class="mog-card mog-card--host">
-
-  
-    <div class="mog-card-media">
-      <img
-        src="/menofgod-site/img/page/images/hosts/host1.jpg"
-        alt="DeShun"
-        loading="lazy"
-      >
-    </div>
-  
-
-  <div class="mog-card-body">
-
-    <h3 class="mog-card-title">
-      DeShun
-    </h3>
-
-    
-      <p class="mog-card-summary">
-        Husband, father, and co‑host and founder of Men of God.
-      </p>
-    
-
-    
-      <div class="mog-host-bio">
-        A devoted husband and father of five, raising four sons and a daughter. He and
-his family are active in their church, and his faith guides how he leads at
-home and serves his community.
-
-
-Grounded in God’s truth, he seeks to live with integrity, humility, and
-purpose, modeling what it means to lead a family under God.
-
-
-As a husband, father, and mentor, he brings a bold, battle‑tested perspective
-to Men of God — calling men to courage, discipline, and unwavering faith.
-      </div>
-    
-
-  </div>
-
-</article>
-
-      
-        
-        
-        
-
-
-
-<article class="mog-card mog-card--host">
-
-  
-    <div class="mog-card-media">
-      <img
-        src="/menofgod-site/img/page/images/hosts/host2_1.jpg"
-        alt="Tom"
-        loading="lazy"
-      >
-    </div>
-  
-
-  <div class="mog-card-body">
-
-    <h3 class="mog-card-title">
-      Tom
-    </h3>
-
-    
-      <p class="mog-card-summary">
-        Retired Air Force veteran, husband, father, and co‑host of Men of God.
-      </p>
-    
-
-    
-      <div class="mog-host-bio">
-        A husband and father of five, raising three sons and two daughters. Renewed in
-his Christian faith, he strives to lead with honesty, humility, and intention.
-Through his daily choices, he works to set an example for his family and
-encourage other men to grow as leaders under God.
-
-
-As a husband, father, and mentor, he brings a bold, battle‑tested perspective
-to Men of God — calling men to courage, discipline, and unwavering faith.
-      </div>
-    
-
-  </div>
-
-</article>
-
-      
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<div class="mog-separator mog-separator--sm">
-
-  
-    <div class="mog-container">
-      <hr>
-    </div>
-  
-
-</div>
-
-
-
-
-<section class="mog-section mog-partners-section">  
-  <div class="mog-container">  
-  
-    
-      
-  
-      
-
-    <h2>Our Partners</h2>  
-
-      <div class="mog-partners-grid">  
-  
-        
-
-          
-
-          <article class="mog-card mog-card--partner">
-
-  
-    <div class="mog-card-media">
-      <img
-        src="/menofgod-site/img/uploads/images/partners/CaringSolutions 2016.png"
-        alt="Caring Solutions"
-        loading="lazy"
-      >
-    </div>
-  
-
-  <div class="mog-card-body">
-
-    <h3 class="mog-card-title">
-      Caring Solutions
-    </h3>
-
-    
-      <p class="mog-card-summary">
-        Hope Offered. Futures Changed.
-      </p>
-    
-
-    
-      <div class="mog-card-cta">
-        <a
-          href="https://www.friendsofcaringsolutions.com/"
-          class="mog-btn mog-btn-secondary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit Website
-        </a>
-      </div>
-    
-
-  </div>
-
-</article>
-
-        
-
-          
-
-          <article class="mog-card mog-card--partner">
-
-  
-    <div class="mog-card-media">
-      <img
-        src="/menofgod-site/img/uploads/images/partners/sp-white-logo.png"
-        alt="Samaritan&#39;s Purse"
-        loading="lazy"
-      >
-    </div>
-  
-
-  <div class="mog-card-body">
-
-    <h3 class="mog-card-title">
-      Samaritan&#39;s Purse
-    </h3>
-
-    
-      <p class="mog-card-summary">
-        Samaritan&#39;s Purse brings physical relief and the hope of the Gospel to hurting people around the world.
-      </p>
-    
-
-    
-      <div class="mog-card-cta">
-        <a
-          href="https://www.samaritanspurse.org/"
-          class="mog-btn mog-btn-secondary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit Website
-        </a>
-      </div>
-    
-
-  </div>
-
-</article>
-
-        
-
-          
-
-          <article class="mog-card mog-card--partner">
-
-  
-    <div class="mog-card-media">
-      <img
-        src="/menofgod-site/img/uploads/images/partners/shield-en.svg"
-        alt="The Salvation Army - Warner Robins Corp"
-        loading="lazy"
-      >
-    </div>
-  
-
-  <div class="mog-card-body">
-
-    <h3 class="mog-card-title">
-      The Salvation Army - Warner Robins Corp
-    </h3>
-
-    
-      <p class="mog-card-summary">
-        Wherever there is a need in warner robins, georgia you&#39;ll find The Salvation Army. Find out how you can help.
-      </p>
-    
-
-    
-      <div class="mog-card-cta">
-        <a
-          href="https://southernusa.salvationarmy.org/warner-robins/"
-          class="mog-btn mog-btn-secondary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit Website
-        </a>
-      </div>
-    
-
-  </div>
-
-</article>
-
-        
-  
-      </div>  
-  
-      <div class="mog-section-footer">  
-        <a  
-          href="/menofgod-site/partners/"  
-          class="mog-btn mog-btn-secondary"  
-        >  
-          View All Partners  
-        </a>  
-      </div>  
-  
-      
-  
-  </div>  
-</section>
-
-
-
-
-
-
-
-  
-  
-
-</main>
-
-  <!-- ============================
-       FOOTER
-  ============================ -->
-  <footer class="mog-footer">
-  <div class="mog-footer-inner">
-
-    <div class="mog-footer-left">
-      <h3 class="mog-footer-title">MEN OF GOD</h3>
-      <p class="mog-footer-tagline">
-        Equipping men in Christ to lead with courage and conviction.
-      </p>
-
-      
-        <a href="/menofgod-site/donate/" class="mog-footer-donate-btn">
-          Support the Mission
-        </a>
-      
-    </div>
-
-    <div class="mog-footer-middle">
-      <nav class="mog-footer-nav" aria-label="Footer navigation">
-            <a href="/menofgod-site/">
-              home
-            </a>
-            <a href="/menofgod-site/about/" aria-current="page">
-              about
-            </a>
-            <a href="/menofgod-site/blog/">
-              blog
-            </a>
-            <a href="/menofgod-site/episodes/">
-              episodes
-            </a>
-            <a href="/menofgod-site/the-shop/">
-              the-shop
-            </a>
-            <a href="/menofgod-site/contact/">
-              contact
-            </a>
-      </nav>
-    </div>
-
-    <div class="mog-footer-right">
-      <p class="mog-footer-scripture">
-        <i>"Be watchful, stand firm in the faith, act like men, be strong."</i>
-        <span class="mog-footer-scripture-ref">— 1 Corinthians 16:13</span>
-      </p>
-    </div>
-
-  </div> <!-- /.mog-footer-inner -->
-
-  <div class="mog-footer-bottom">
-    <p>&copy; Men of God 2026</p>
-  </div>
+  </main>
+
+  <footer>
+  <p>
+    &copy; <span id="year"></span> Men of God. All rights reserved.
+  </p>
+  <p>
+    Strong families build strong communities and a strong nation.
+  </p>
 </footer>
 
+<script>
+  // Auto-update year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-  <!-- Icon base path for theme toggle -->
-  <script>
-    window.mogIconBase = "/menofgod-site/img/page/icons/";
-  </script>
-
-  <!-- Global JS -->
+  <!-- Scripts -->
   <script src="/menofgod-site/js/main.js"></script>
-  <script src="/menofgod-site/js/theme-toggle.js"></script>
-
 </body>
 </html>
+
+
