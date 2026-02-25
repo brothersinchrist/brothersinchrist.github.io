@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Men of God | Men of God</title>
+
+  <meta property="og:title" content="">
+  <meta property="og:site_name" content="Men of God">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brothersinchrist.github.io/menofgod-site/products/414319301/">
+  <meta property="og:image" content="https://brothersinchrist.github.io/menofgod-site/img/page/images/hero-bg.jpg">
+  
+  <meta name="description" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+
+  
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://brothersinchrist.github.io/menofgod-site/sitemap.xml">
+  <link rel="canonical" href="https://brothersinchrist.github.io/menofgod-site/products/414319301/">
+
+  <script>
+    (function () {
+      const systemQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+      const giscusThemes = {
+        light: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_light.css",
+        dark: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_dark.css"
+      };
+
+      function getStoredTheme() {
+        return localStorage.getItem("theme") || "system";
+      }
+
+      function getEffectiveTheme() {
+        const saved = getStoredTheme();
+        return saved === "system"
+          ? (systemQuery.matches ? "dark" : "light")
+          : saved;
+      }
+
+      function getGiscusThemeUrl() {
+        return giscusThemes[getEffectiveTheme()];
+      }
+
+      window.mogTheme = {
+        getStoredTheme,
+        getEffectiveTheme,
+        getGiscusThemeUrl
+      };
+
+      document.documentElement.setAttribute(
+        "data-theme",
+        getEffectiveTheme()
+      );
+    })();
+  </script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/menofgod-site/css/main.css">
+  <!-- Manifest -->
+  <link rel="manifest" href="/menofgod-site/img/page/icons/site.webmanifest">
+</head>
+
+<body class="mog-page">
+
+  <!-- ============================
+       HEADER
+  ============================ -->
+  <header class="mog-header">
+  <div class="mog-header-inner">
+
+    <!-- Mobile nav toggle (LEFT) -->
+    <button
+      class="mog-nav-toggle"
+      id="mogNavToggle"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="mogNav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Logo (CENTER-ish) -->
+    <a href="/menofgod-site/" class="site-logo">
+      <span class="mog-logo-text">Men of God</span>
+    </a>
+
+    <!-- Theme toggle (RIGHT) -->
+    <div class="mog-header-right">
+      <div class="mog-theme-dropdown">
+        <button class="mog-theme-toggle-btn" id="themeToggleBtn">
+          <img id="themeIcon" src="/menofgod-site/img/page/icons/gear.svg" alt="">
+          <span id="themeLabel">System</span>
+        </button>
+
+        <ul class="mog-theme-menu" id="themeMenu">
+          <li data-theme="light">
+            <img src="/menofgod-site/img/page/icons/sun.svg" alt="">
+            Light theme
+          </li>
+
+          <li data-theme="dark">
+            <img src="/menofgod-site/img/page/icons/moon.svg" alt="">
+            Dark theme
+          </li>
+
+          <li data-theme="system">
+            <img src="/menofgod-site/img/page/icons/gear.svg" alt="">
+            Device theme
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="mog-nav" id="mogNav">
+        <a href="/menofgod-site/">
+          home
+        </a>
+        <a href="/menofgod-site/about/">
+          about
+        </a>
+        <a href="/menofgod-site/blog/">
+          blog
+        </a>
+        <a href="/menofgod-site/episodes/">
+          episodes
+        </a>
+        <a href="/menofgod-site/the-shop/">
+          the-shop
+        </a>
+        <a href="/menofgod-site/contact/">
+          contact
+        </a>
+  </nav>
+
+  </div>
+</header>
+
+
+  <!-- ============================
+       MAIN CONTENT
+  ============================ -->
+  <main class="mog-main">
+
+  
+  
+
+
+  
+  
+
+    
+
+  
+
+
+  
+  
+  
+
+
+<div class="product-page">
+
+  <!-- Title -->
+  <h1 class="product-title">Man of God - Iron Sharpens Iron</h1>
+
+  <!-- Main Image -->
+  <div class="product-image">
+    <img
+      id="product-image"
+      src="https://files.cdn.printful.com/files/bfa/bfa20aadb6e5c3d4118406273efbbd10_preview.png"
+      alt="Man of God - Iron Sharpens Iron"
+    >
+  </div>
+
+  <!-- Variant Selectors -->
+  <div class="product-options">
+
+    <!-- Color -->
+    <label for="color">Color</label>
+    <select id="color">
+      
+        <option value="White">White</option>
+      
+        <option value="Black">Black</option>
+      
+        <option value="Navy">Navy</option>
+      
+    </select>
+
+    <!-- Size -->
+    <label for="size">Size</label>
+    <select id="size"></select>
+
+    <!-- Price -->
+    <p class="product-price">
+      $<span id="price"></span>
+    </p>
+
+  </div>
+
+  <!-- Checkout Form -->
+  <form
+    id="checkout-form"
+    action="https://stripe-checkout-worker.menofgod-worker.workers.dev"
+    method="POST"
+    class="product-form"
+  >
+
+    <!-- Explicit type for worker routing -->
+    <input type="hidden" name="type" value="store">
+
+    <input type="hidden" name="product_id" value="414319301">
+    <input type="hidden" name="price_id" id="stripe_price_id">
+    <input type="hidden" name="printful_variant_id" id="printful_variant_id">
+    <input type="hidden" name="product_title" value="Man of God - Iron Sharpens Iron">
+
+    <button type="submit" class="btn-primary">
+      Buy Now
+    </button>
+
+  </form>
+
+</div>
+
+<script>
+  window.MOG_PRODUCT = {"id":414319301,"name":"Man of God - Iron Sharpens Iron","thumbnail":"https://files.cdn.printful.com/files/bfa/bfa20aadb6e5c3d4118406273efbbd10_preview.png","variants_by_color":{"White":[{"id":5148009646,"variant_id":11576,"size":"S","color":"White","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/306/306a4d503d9f6bb9ab5f8bf76be4a7ad_preview.png","sku":"69687A7E79B8A_S","stripe_price_id":"price_1T2FTLCl9fZRmVjAkJrYEXlN","stripe_product_id":"prod_U0C7vyZo9Vug4u"},{"id":5148009647,"variant_id":11577,"size":"M","color":"White","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/306/306a4d503d9f6bb9ab5f8bf76be4a7ad_preview.png","sku":"69687A7E79B8A_M","stripe_price_id":"price_1T2FTMCl9fZRmVjApnuuNkRC","stripe_product_id":"prod_U0C7vyZo9Vug4u"},{"id":5148009648,"variant_id":11578,"size":"L","color":"White","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/306/306a4d503d9f6bb9ab5f8bf76be4a7ad_preview.png","sku":"69687A7E79B8A_L","stripe_price_id":"price_1T2FTMCl9fZRmVjAFPTgwUY5","stripe_product_id":"prod_U0C7vyZo9Vug4u"},{"id":5148009649,"variant_id":11579,"size":"XL","color":"White","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/306/306a4d503d9f6bb9ab5f8bf76be4a7ad_preview.png","sku":"69687A7E79B8A_XL","stripe_price_id":"price_1T2FTMCl9fZRmVjA2ZIwSj2L","stripe_product_id":"prod_U0C7vyZo9Vug4u"},{"id":5148009650,"variant_id":11580,"size":"2XL","color":"White","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/306/306a4d503d9f6bb9ab5f8bf76be4a7ad_preview.png","sku":"69687A7E79B8A_2XL","stripe_price_id":"price_1T2FTMCl9fZRmVjAm8MhBokO","stripe_product_id":"prod_U0C7vyZo9Vug4u"}],"Black":[{"id":5170605202,"variant_id":11546,"size":"S","color":"Black","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/bfa/bfa20aadb6e5c3d4118406273efbbd10_preview.png","sku":"697FC16BCB94D_Black-S","stripe_price_id":"price_1T2FTNCl9fZRmVjAAMTGCABN","stripe_product_id":"prod_U0C7e3vnzwHGwM"},{"id":5170605203,"variant_id":11547,"size":"M","color":"Black","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/bfa/bfa20aadb6e5c3d4118406273efbbd10_preview.png","sku":"697FC16BCB94D_Black-M","stripe_price_id":"price_1T2FTNCl9fZRmVjAW2Y63OwP","stripe_product_id":"prod_U0C7e3vnzwHGwM"},{"id":5170605204,"variant_id":11548,"size":"L","color":"Black","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/bfa/bfa20aadb6e5c3d4118406273efbbd10_preview.png","sku":"697FC16BCB94D_Black-L","stripe_price_id":"price_1T2FTNCl9fZRmVjACGidnKeS","stripe_product_id":"prod_U0C7e3vnzwHGwM"},{"id":5170605205,"variant_id":11549,"size":"XL","color":"Black","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/bfa/bfa20aadb6e5c3d4118406273efbbd10_preview.png","sku":"697FC16BCB94D_Black-XL","stripe_price_id":"price_1T2FTNCl9fZRmVjA8mOcm3CG","stripe_product_id":"prod_U0C7e3vnzwHGwM"},{"id":5170605206,"variant_id":11550,"size":"2XL","color":"Black","price":"25.50","availability":"active","image":"https://files.cdn.printful.com/files/bfa/bfa20aadb6e5c3d4118406273efbbd10_preview.png","sku":"697FC16BCB94D_Black-2XL","stripe_price_id":"price_1T2FTOCl9fZRmVjADp3zPZ8F","stripe_product_id":"prod_U0C7e3vnzwHGwM"}],"Navy":[{"id":5170605207,"variant_id":11561,"size":"S","color":"Navy","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/8a2/8a2756931653c8e132f8b9290912b1e5_preview.png","sku":"697FC16BCB94D_Navy-S","stripe_price_id":"price_1T2FTOCl9fZRmVjAsciPgFdA","stripe_product_id":"prod_U0C7yUp4pGVPxa"},{"id":5170605208,"variant_id":11562,"size":"M","color":"Navy","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/8a2/8a2756931653c8e132f8b9290912b1e5_preview.png","sku":"697FC16BCB94D_Navy-M","stripe_price_id":"price_1T2FTOCl9fZRmVjAdks1JHsj","stripe_product_id":"prod_U0C7yUp4pGVPxa"},{"id":5170605209,"variant_id":11563,"size":"L","color":"Navy","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/8a2/8a2756931653c8e132f8b9290912b1e5_preview.png","sku":"697FC16BCB94D_Navy-L","stripe_price_id":"price_1T2FTOCl9fZRmVjA1ZH7ene4","stripe_product_id":"prod_U0C7yUp4pGVPxa"},{"id":5170605210,"variant_id":11564,"size":"XL","color":"Navy","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/8a2/8a2756931653c8e132f8b9290912b1e5_preview.png","sku":"697FC16BCB94D_Navy-XL","stripe_price_id":"price_1T2FTPCl9fZRmVjAs3F8goPK","stripe_product_id":"prod_U0C7yUp4pGVPxa"},{"id":5170605211,"variant_id":11565,"size":"2XL","color":"Navy","price":"25.00","availability":"active","image":"https://files.cdn.printful.com/files/8a2/8a2756931653c8e132f8b9290912b1e5_preview.png","sku":"697FC16BCB94D_Navy-2XL","stripe_price_id":"price_1T2FTPCl9fZRmVjArDoHaSM5","stripe_product_id":"prod_U0C7yUp4pGVPxa"}]}};
+</script>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.get("canceled") === "true") {
+    const banner = document.createElement("div");
+    banner.className = "checkout-canceled-banner";
+    banner.textContent = "Checkout canceled. You can continue shopping.";
+    document.body.prepend(banner);
+  }
+</script>
+
+<script src="/menofgod-site/js/product-page.js"></script>
+
+
+
+
+
+
+  
+  
+
+</main>
+
+  <!-- ============================
+       FOOTER
+  ============================ -->
+  <footer class="mog-footer">
+  <div class="mog-footer-inner">
+
+    <div class="mog-footer-left">
+      <h3 class="mog-footer-title">MEN OF GOD</h3>
+      <p class="mog-footer-tagline">
+        Equipping men in Christ to lead with courage and conviction.
+      </p>
+
+      
+        <a href="/menofgod-site/donate/" class="mog-footer-donate-btn">
+          Support the Mission
+        </a>
+      
+    </div>
+
+    <div class="mog-footer-middle">
+      <nav class="mog-footer-nav" aria-label="Footer navigation">
+            <a href="/menofgod-site/">
+              home
+            </a>
+            <a href="/menofgod-site/about/">
+              about
+            </a>
+            <a href="/menofgod-site/blog/">
+              blog
+            </a>
+            <a href="/menofgod-site/episodes/">
+              episodes
+            </a>
+            <a href="/menofgod-site/the-shop/">
+              the-shop
+            </a>
+            <a href="/menofgod-site/contact/">
+              contact
+            </a>
+      </nav>
+    </div>
+
+    <div class="mog-footer-right">
+      <p class="mog-footer-scripture">
+        <i>"Be watchful, stand firm in the faith, act like men, be strong."</i>
+        <span class="mog-footer-scripture-ref">— 1 Corinthians 16:13</span>
+      </p>
+    </div>
+
+  </div> <!-- /.mog-footer-inner -->
+
+  <div class="mog-footer-bottom">
+    <p>&copy; Men of God 2026</p>
+  </div>
+</footer>
+
+
+  <!-- Icon base path for theme toggle -->
+  <script>
+    window.mogIconBase = "/menofgod-site/img/page/icons/";
+  </script>
+
+  <!-- Global JS -->
+  <script src="/menofgod-site/js/main.js"></script>
+  <script src="/menofgod-site/js/theme-toggle.js"></script>
+
+</body>
+</html>
