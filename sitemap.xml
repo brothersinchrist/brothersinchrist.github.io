@@ -24,14 +24,14 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/hosts/tom/</loc>
+    <loc>https://brothersinchrist.github.io/hosts/deshun/</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/hosts/deshun/</loc>
+    <loc>https://brothersinchrist.github.io/hosts/tom/</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -101,6 +101,13 @@
   </url>
 
   <url>
+    <loc>https://brothersinchrist.github.io/episodes/2026-01-14-this-is-a-test-post-copy/</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://brothersinchrist.github.io/episodes/2026-01-14-this-is-another-test-post/</loc>
     <lastmod>2026-01-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -110,13 +117,6 @@
   <url>
     <loc>https://brothersinchrist.github.io/episodes/2026-01-16-hard-men-podcast/</loc>
     <lastmod>2025-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/episodes/2026-01-14-this-is-a-test-post-copy/</loc>
-    <lastmod>2026-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -157,7 +157,7 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/donate/</loc>
+    <loc>https://brothersinchrist.github.io/episodes/</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -171,7 +171,7 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/episodes/</loc>
+    <loc>https://brothersinchrist.github.io/donate/</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
