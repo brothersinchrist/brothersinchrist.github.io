@@ -59,22 +59,8 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/blog/2026-01-09-new-blog-post/</loc>
-    <lastmod>2026-01-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://brothersinchrist.github.io/blog/2026-01-10-trust-and-obey-god/</loc>
     <lastmod>2026-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/blog/2026-02-14-test-post/</loc>
-    <lastmod>2026-02-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -87,8 +73,15 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/episodes/2026-01-07-first-episode/</loc>
-    <lastmod>2026-01-07</lastmod>
+    <loc>https://brothersinchrist.github.io/blog/2026-02-14-test-post/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/blog/2026-01-09-new-blog-post/</loc>
+    <lastmod>2026-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -101,13 +94,6 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/episodes/2026-01-08-why-most-christians-get-discipleship-wrong/</loc>
-    <lastmod>2026-01-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://brothersinchrist.github.io/episodes/2026-01-16-hard-men-podcast/</loc>
     <lastmod>2025-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -115,42 +101,14 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/tags/</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/</loc>
-    <lastmod>2026-02-26</lastmod>
+    <loc>https://brothersinchrist.github.io/episodes/2026-01-08-why-most-christians-get-discipleship-wrong/</loc>
+    <lastmod>2026-01-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://brothersinchrist.github.io/about/</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/donate/</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/contact/</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/episodes/</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -164,21 +122,35 @@
   </url>
 
   <url>
+    <loc>https://brothersinchrist.github.io/contact/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/donate/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/episodes/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/partners/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://brothersinchrist.github.io/the-shop/</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/the-shop/success/</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/donate/monthly/</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -192,7 +164,28 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/partners/</loc>
+    <loc>https://brothersinchrist.github.io/donate/monthly/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/the-shop/success/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/tags/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
