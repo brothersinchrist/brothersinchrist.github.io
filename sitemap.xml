@@ -3,13 +3,6 @@
 
 
   <url>
-    <loc>https://brothersinchrist.github.io/partners/2026-02-15-caring-solutions/</loc>
-    <lastmod>2026-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://brothersinchrist.github.io/partners/2026-02-15-samaritans-purse/</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -18,6 +11,13 @@
 
   <url>
     <loc>https://brothersinchrist.github.io/partners/2026-02-15-the-salvation-army-warner-robins-corp/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/partners/2026-02-15-caring-solutions/</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -45,14 +45,14 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/blog/2026-01-08-the-lord-is-my-portion/</loc>
+    <loc>https://brothersinchrist.github.io/blog/2026-01-07-why-strong-men-build-strong-families/</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/blog/2026-01-07-why-strong-men-build-strong-families/</loc>
+    <loc>https://brothersinchrist.github.io/blog/2026-01-08-the-lord-is-my-portion/</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -87,13 +87,6 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/episodes/2026-01-16-hard-men-podcast/</loc>
-    <lastmod>2025-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://brothersinchrist.github.io/the-shop/success/</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -122,14 +115,14 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/blog/</loc>
+    <loc>https://brothersinchrist.github.io/contact/</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/contact/</loc>
+    <loc>https://brothersinchrist.github.io/blog/</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -157,13 +150,6 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/the-shop/</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://brothersinchrist.github.io/donate/monthly/</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -172,6 +158,13 @@
 
   <url>
     <loc>https://brothersinchrist.github.io/donate/one-time/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/the-shop/</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
